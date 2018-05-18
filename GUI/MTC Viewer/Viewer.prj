@@ -1,0 +1,192 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="1292227745" file="/Users/glennjocher/Google Drive/MATLAB/functions/GUI/MTC Viewer/Viewer.prj" location="/Users/glennjocher/Google Drive/MATLAB/functions/GUI/MTC Viewer" name="Viewer" preferred-package-location="/Users/glennjocher/Google Drive/MATLAB/functions/GUI/MTC Viewer/Viewer/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Viewer</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.5</param.version>
+    <param.authnamewatermark>Glenn Jocher</param.authnamewatermark>
+    <param.email>glenn.jocher@ultralytics.com</param.email>
+    <param.company>Ultralytics</param.company>
+    <param.summary>Viewer</param.summary>
+    <param.description>This MATLAB based viewer plots MTC data stored in *.glenn files. 
+
+It loads up the first 500,000 windows in a selected file, subtracts pedestals, applies a pruning list, and optionally applies a spline interpolant to saturated regions.</param.description>
+    <param.screenshot>/Users/glennjocher/Google Drive/UL/website/Logos/logo name 2000 × 2000.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>/Ultralytics/Viewer/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes>In the following directions, replace MCR_ROOT by the directory where the MATLAB Runtime is installed on the target machine.
+
+If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the concatenation of the following strings:
+
+    MCR_ROOT/v90/runtime/maci64:
+    MCR_ROOT/v90/sys/os/maci64:
+    MCR_ROOT/v90/bin/maci64
+
+If it is defined, set it to the concatenation of these strings:
+
+    ${LD_LIBRARY_PATH}: 
+    MCR_ROOT/v90/runtime/maci64:
+    MCR_ROOT/v90/sys/os/maci64:
+    MCR_ROOT/v90/bin/maci64</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}/Viewer/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/Viewer/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/Viewer/for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/MTCviewer.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/fcnplot1MTCevent.m</file>
+      <file>${PROJECT_ROOT}/splash1.png</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/DataAnalysis/removeSpikes.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/MTCmapping.mat</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/MTCoffsets.mat</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/pedestals/MTCpedestals.exp_0001_run_0882.glenn.txt.mat</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/C/fcnindex1c.mexmaci64</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/fcnminmax.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/fcnsigmarejection.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/fcnsmooth.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/fcnunique.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/floorandceil.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/max3.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/mean3.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/midspace.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/min3.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/minmax3.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/paths/fcnpathm1.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/closeallexcept.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/colormaps/fcndefaultcolors.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/contextmenus/fcncontextmenuexpand.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/contextmenus/fig.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcnaxesdatalims.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcnfontsize.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcnhist.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcnlightencolor.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcnribbon.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcnstr2rgbcolor.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcntight.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/fcnview.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/getfigureaxes.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/histNfit.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/isfigure.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/sca.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/plotting/xyzlabel.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/strings/getformat.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/strings/isnumericstr.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/strings/str_.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/text files/fcnloadtextfile.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/transformations/fcnelaz.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/functions/units/r2d.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/Mapping/MTCSRCCH2pixelID.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/Mapping/MTCpixelID2SRCCH.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/Saturated Pulses/fcnSplinePulseReconstruction.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/fcnpulsewidth.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/pedestals/fcnpruninglist.m</file>
+      <file>/Users/glennjocher/Google Drive/MATLAB/neutrinos/nViewGUI/MTC/pedestals/subtractpedestals.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/Viewer/for_testing" name="Viewer.app" optional="false">/Users/glennjocher/Google Drive/MATLAB/functions/GUI/MTC Viewer/Viewer/for_testing/Viewer.app</file>
+      <file location="${PROJECT_ROOT}/Viewer/for_testing" name="readme.txt" optional="true">/Users/glennjocher/Google Drive/MATLAB/functions/GUI/MTC Viewer/Viewer/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/Viewer/for_testing" name="splash.png" optional="false">/Users/glennjocher/Google Drive/MATLAB/functions/GUI/MTC Viewer/Viewer/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/Viewer/for_testing" name="run_Viewer.sh" optional="false">/Users/glennjocher/Google Drive/MATLAB/functions/GUI/MTC Viewer/Viewer/for_testing/run_Viewer.sh</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2015b.app</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.12</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
