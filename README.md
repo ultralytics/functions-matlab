@@ -14,7 +14,9 @@ The https://github.com/ultralytics/functions-matlab repo contains common functio
 [MATLAB](https://www.mathworks.com/products/matlab.html) >= 2018a.
 
 # Running
-`$ git clone https://github.com/ultralytics/functions-matlab` and add to the MATLAB path `>> addpath(genpath('/functions-matlab'))`
+
+1. `$ git clone https://github.com/ultralytics/functions-matlab` 
+2. Add to MATLAB path `>> addpath(genpath('/functions-matlab'))`
 
 # Contact
 
