@@ -93,8 +93,8 @@ bytes = estimatedtime(filename,pathname);
 
 if nn==73; format=format([1:2 5:end]); end % ********************** MTC GLENN FORMAT ***************************
 if nn==3; format='%f%f%f'; end % ********************** TOFPET2 SINGLES FORMAT ***************************
-if strcmp(header{2},'PDGEncoding'); format((1:4)+4)='%f64'; end % ********************** 2017 GEANT4 FORMAT ***************************
-if strcmp(header{8},'PDGEncoding'); format((1:4)+26)='%f64'; end % ********************** 2017 GEANT4 FORMAT ***************************
+if nh>=2 && strcmp(header{2},'PDGEncoding'); format((1:4)+4)='%f64'; end % ********************** 2017 GEANT4 FORMAT ***************************
+if nh>=8 && strcmp(header{8},'PDGEncoding'); format((1:4)+26)='%f64'; end % ********************** 2017 GEANT4 FORMAT ***************************
 
 
 %TEXTSCAN (FASTER) ----------------------------------
@@ -103,8 +103,8 @@ A.x=textscan(fid,format,maxlines,'Headerlines',0); %a little faster for small fi
 rows = size(A.x{1},1);
 
 if nn==73; A.double=A.x{1}; end % ********************** MTC GLENN FORMAT ***************************
-if strcmp(header{2},'PDGEncoding'); A.double=A.x{2}; end % ********************** 2017 GEANT4 FORMAT ***************************
-if strcmp(header{8},'PDGEncoding'); A.double=A.x{8}; end % ********************** 2017 GEANT4 FORMAT ***************************
+if nh>=2 && strcmp(header{2},'PDGEncoding'); A.double=A.x{2}; end % ********************** 2017 GEANT4 FORMAT ***************************
+if nh>=8 && strcmp(header{8},'PDGEncoding'); A.double=A.x{8}; end % ********************** 2017 GEANT4 FORMAT ***************************
 
 xs = cell(rows,ns);  for i=1:ns; xs(:,i)=A.x{vs(i)}; end %strings
 A.x = [A.x{vn}]; %numbers
