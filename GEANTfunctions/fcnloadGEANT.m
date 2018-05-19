@@ -3,7 +3,7 @@ if nargin<2
     maxlines=1.2E7;   if nargin==0;  filename = [];  end
 end
 
-if isempty(filename); filename=[fcnpathm1(evalin('base','input.directory')) 'GEANTfiles']; end
+if isempty(filename); filename=evalin('base','input.directory'); end
     
 G = fcnloadtextfile(filename,maxlines);
 %G.x = double(G.x);
