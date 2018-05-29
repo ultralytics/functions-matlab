@@ -57,17 +57,24 @@ elseif r==2
     [eigvec,eigval] = eig(C); % Compute eigen-stuff
     xy = k * [cos(p) sin(p)] * sqrt(eigval) * eigvec'; % Transformation
     ellipse.x=xy(:,1)+x0;  ellipse.y=xy(:,2)+y0;
-    
+        
     %cross
-    p = [0 180 0 90 270 0 0 0]';
-    gain = [1 1 0 1.3 1 0 0 0]';
-    xy = k * [cosd(p).*gain, sind(p).*gain] * sqrt(eigval) * eigvec'; % Transformation
-    cross.x=xy(:,1)+x0;  cross.y=xy(:,2)+y0;
+    XYZ = [1.1  0
+        -1  0
+        0  0
+        0  1
+        0 -1
+        0  0
+        0  0
+        0  0] * sqrt(eigval)*eigvec';
+    cross.x = k*XYZ(:,1)+x0;
+    cross.y = k*XYZ(:,2)+y0;
     
     if plotflag
-        h(1)=plot(ellipse.x,ellipse.y,'b.-');
-        h(2)=plot(cross.x,cross.y,'b-');
+        h(1)=plot(ellipse.x,ellipse.y,'-');
+        %h(2)=plot(cross.x,cross.y,'-','Color',h(1).Color,'linewidth',.1);
     end
+
 end
 
 
