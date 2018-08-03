@@ -11,7 +11,7 @@ if ~strcmp(a,b) %new computer or new matlab install
 end
 
 %CRASHES MATLAB FOR SOME REASON
-c = [a filesep 'functions'];  addpath(genpath(c))
+c = [a filesep 'functions-matlab'];  addpath(genpath(c))
 cd(a);
 
 %opengl('OpenGLWobbleTesselatorBug',1)
