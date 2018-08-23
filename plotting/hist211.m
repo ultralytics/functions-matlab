@@ -10,7 +10,7 @@ if nargin==1
     X=X(:,1);
 end
 
-sigmarejectionflag = 1;
+sigmarejectionflag = 0;
 
 ha = fig(2,2,1.5);  delete(ha(2));
 c = [0 0.405 0.666]; %fcndefaultcolors(1);
