@@ -1,7 +1,7 @@
 function dms=deg2dms(deg)
 % deg2DMS  Converts degians to degrees-minutes-seconds. Vectorized.
 % Version: 12 Mar 00
-% Useage:  dms=deg2dms(deg)
+% Usage:  dms=deg2dms(deg)
 % Input:   deg - vector of angles in degians
 % Output:  dms - [d m s] array of angles in deg-min-sec, where
 %                d = vector of degrees

@@ -48,7 +48,7 @@ for i = 1:nu
             color1 = [0 0 0];
         end
     else
-       fprintf('WARNING: unkown GEANT particle ID %d detected. Unable to match a name to this PID.\n',p)
+       fprintf('WARNING: unknown GEANT particle ID %d detected. Unable to match a name to this PID.\n',p)
         name1           = sprintf('%d pid',p);
         mass1           = 0;
         charge1         = 0;

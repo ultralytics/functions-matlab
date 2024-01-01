@@ -17,7 +17,7 @@ end
 
 if nargout<2 %traditional sigma
     su=sqrt((1./(ni-1)).*sum(dx.^2));
-else %find seperate upper and lower sigmas   
+else %find separate upper and lower sigmas   
     j = (x>mu) & i;
     su=sqrt(sum(j.*(a-mu).^2)./(sum(j)-1));
     

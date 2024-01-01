@@ -34,7 +34,7 @@ elseif nargin==1
     elseif numel(varargin{1})==4 %it is a position vector
         h=[];
         rect=varargin{1};
-    else % isnt a handle or a position vector
+    else % isn't a handle or a position vector
         error('First input must be a handle to an axes or figure, or a position vector');
     end
 
@@ -61,7 +61,7 @@ maxheight=max(monitorz(:,4)); %max vertical resolution of all monitors
 
 if ~isempty(h)
 
-    %h is the handle to figure or axes whose origin (first 2 elemetns of position vector) we're taking
+    %h is the handle to figure or axes whose origin (first 2 elements of position vector) we're taking
     %rect with respect to.
     origin=getpixelposition(h,true);
 

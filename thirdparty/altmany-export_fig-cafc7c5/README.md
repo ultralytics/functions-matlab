@@ -262,7 +262,7 @@ If the figure looks correct on screen, but an error exists in the exported outpu
 
 ![](https://farm4.staticflickr.com/3956/15591911455_b9008bd77e_o_d.jpg)
 
-If you've ever wondered what's going on in the logo on the export_fig download page (reproduced here), then this explanantion is for you. The logo is designed to demonstrate as many of export_fig's features as possible: 
+If you've ever wondered what's going on in the logo on the export_fig download page (reproduced here), then this explanation is for you. The logo is designed to demonstrate as many of export_fig's features as possible: 
  
 Given a figure containing a translucent mesh (top right), export_fig can export to pdf (bottom centre), which allows the figure to be zoomed-in without losing quality (because it's a vector graphic), but isn't able to reproduce the translucency. Also, depending on the PDF viewer program, small gaps appear between the patches, which are seen here as thin white lines. 
  

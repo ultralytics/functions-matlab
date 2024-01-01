@@ -19,7 +19,7 @@ function string = user_string(string_name, string)
 %
 % OUT:
 %   string  - The currently saved string. Default: ''
-%   isSaved - Boolean indicating whether the save was succesful
+%   isSaved - Boolean indicating whether the save was successful
 
 % Copyright (C) Oliver Woodford 2011-2014, Yair Altman 2015-
 
