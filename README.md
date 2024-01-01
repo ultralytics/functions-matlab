@@ -22,7 +22,7 @@ To run the resources available in this repository, ensure that you have the foll
 Installing and getting started with these functions is a straightforward process:
 
 1. Clone this repository to your local machine:
-   
+
    ```bash
    $ git clone https://github.com/ultralytics/functions-matlab
    ```
@@ -32,19 +32,19 @@ Installing and getting started with these functions is a straightforward process
    ```matlab
    >> addpath(genpath('path_to_cloned_repo/functions-matlab'))
    ```
-   
+
    Replace `path_to_cloned_repo` with the path to the folder where you cloned the repository.
 
 ## 🧰 Usage
 
 To use a function from the repository, simply call it from your MATLAB script or command window as you would with any other MATLAB function. If you have added the repository to your MATLAB path as described above, the functions will be recognized by MATLAB without the need for any additional steps.
 
-
 # 🤝 Contribute
 
 We welcome contributions from the community! Whether you're fixing bugs, adding new features, or improving documentation, your input is invaluable. Take a look at our [Contributing Guide](https://docs.ultralytics.com/help/contributing) to get started. Also, we'd love to hear about your experience with Ultralytics products. Please consider filling out our [Survey](https://ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A huge 🙏 and thank you to all of our contributors!
 
 <!-- Ultralytics contributors -->
+
 <a href="https://github.com/ultralytics/yolov5/graphs/contributors">
 <img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/image-contributors.png" alt="Ultralytics open-source contributors"></a>
 
