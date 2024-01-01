@@ -32,7 +32,7 @@ function Yi = qinterp1(x,Y,xi,methodflag)
 %   interp1 once, and then storing this library data in a MAT-file or
 %   equivalent.  Because the speed of qinterp1 is independent of the length
 %   of the library vectors, the author recommends over-sampling this
-%   generated set untill memory considerations start limitting program speed.
+%   generated set until memory considerations start limiting program speed.
 %
 %   If the user wishes to use two or more spacings (i.e., a closely-spaced
 %   library in the region of fine features, and a loosely-spaced library in

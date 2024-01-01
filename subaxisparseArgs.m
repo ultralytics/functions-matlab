@@ -20,7 +20,7 @@ function ArgStruct=subaxisparseArgs(args,ArgStruct,varargin)
 %        'MarginLeft',.1,'MarginRight',.1,'MarginTop',.1,'MarginBottom',.1, ...
 %        'rows',[],'cols',[]); 
 %
-% %The capital letters define abrreviations.  
+% %The capital letters define abbreviations.  
 % %  Eg. parseargtest('spacingvertical',0) is equivalent to  parseargtest('sv',0) 
 %
 % Args=parseArgs(varargin,Args, ... % fill the arg-struct with values entered by the user
@@ -64,7 +64,7 @@ for i=1:length(Fnames)
     name=lower(Fnames{i,1});
     Fnames{i,2}=name; %col2=lower
     AbbrevIdx=find(Fnames{i,1}~=name);
-    Fnames{i,3}=[name(AbbrevIdx) ' ']; %col3=abreviation letters (those that are uppercase in the ArgStruct) e.g. SpacingHoriz->sh
+    Fnames{i,3}=[name(AbbrevIdx) ' ']; %col3=abbreviation letters (those that are uppercase in the ArgStruct) e.g. SpacingHoriz->sh
     %the space prevents strvcat from removing empty lines
     Fnames{i,4}=isempty(strmatch(Fnames{i,2},FlagTypeParams)); %Does this parameter have a value? (e.g. not flagtype)
 end

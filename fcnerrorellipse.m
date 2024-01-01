@@ -1,7 +1,7 @@
 function [ellipse, cross, h] = fcnerrorellipse( C , mu, conf, plotflag)
 %      'C' - Alternate method of specifying the covariance matrix
 %      'mu' - Alternate method of specifying the ellipse (-oid) center
-%      'conf' - A value betwen 0 and 1 specifying the confidence interval.
+%      'conf' - A value between 0 and 1 specifying the confidence interval.
 if nargin<4; plotflag=false; end
 h=gobjects(2);
 

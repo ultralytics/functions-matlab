@@ -13,7 +13,7 @@ function h=subaxis(varargin)
 %           all units are relative (e.g from 0 to 1)
 %
 %           Abbreviations of parameters can be used.. (Eg MR instead of MarginRight)
-%           (holdaxis means that it wont delete any axes below.)
+%           (holdaxis means that it won't delete any axes below.)
 %
 %
 % Example:

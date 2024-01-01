@@ -15,7 +15,7 @@ function [c,indA,indC,n] = fcnunique(a,rows)
 %   [C,IA,IC] = UNIQUE(A,OCCURRENCE) and
 %   [C,IA,IC] = UNIQUE(A,'rows',OCCURRENCE) specify which index is returned
 %   in IA in the case of repeated values (or rows) in A. The default value
-%   is OCCURENCE = 'first', which returns the index of the first occurrence 
+%   is OCCURRENCE = 'first', which returns the index of the first occurrence 
 %   of each repeated value (or row) in A, while OCCURRENCE = 'last' returns
 %   the index of the last occurrence of each repeated value (or row) in A.
 %  
@@ -98,7 +98,7 @@ else
         indC = cumsum(groupsSortA);                         % Lists position, starting at 1.
         indC(indSortA) = indC;                              % Re-reference indC to indexing of sortA.
         if nargout>3
-            n = diff([find(groupsSortA); numel(a)+1]); %number of occurences!
+            n = diff([find(groupsSortA); numel(a)+1]); %number of occurrences!
         end
     end
 end

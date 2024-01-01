@@ -25,8 +25,8 @@ function [Maxima,MaxPos,Minima,MinPos]=MinimaMaxima3D(Input,Robust,LookInBoundar
 % the values (numbermax) and subindexes (numbermax x 3) of local maxima
 % and position in Input. Maxima (and the subindexes) are sorted in
 % descending order.
-% Similar situation for Minima and MinimaPos witn a numbermin elements but 
-% with the execption of being sorted in ascending order.
+% Similar situation for Minima and MinimaPos with a numbermin elements but 
+% with the exception of being sorted in ascending order.
 %  
 % IMPORTANT: if numbermin or numbermax are not specified, ALL the minima
 % or maxima will be returned. This can be a useless for highly
@@ -232,7 +232,7 @@ for n_dd=1:Numbder_dd
 end
 
 %Well , now the easy part, all values MatMinMax ==1 are local maximum and
-%the values MatMinMax ==-1 are minimun
+%the values MatMinMax ==-1 are minimum
 
 AllMaxima=find(MatMinMax==1);
 AllMinima=find(MatMinMax==-1);

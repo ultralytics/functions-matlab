@@ -2,7 +2,7 @@ function deg=dms2deg(dms)
 % DMS2DEG  Converts degrees-minutes-seconds to decimal degrees.
 %   Vectorized.
 % Version: 12 Mar 00
-% Useage:  deg=dms2deg(dms)
+% Usage:  deg=dms2deg(dms)
 % Input:   dms - [d m s] array of angles in deg-min-sec, where
 %                d = vector of degrees
 %                m = vector of minutes

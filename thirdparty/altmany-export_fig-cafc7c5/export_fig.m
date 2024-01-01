@@ -104,7 +104,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
 %   -r<val> - option val indicates the resolution (in pixels per inch) to
 %             export bitmap and vector outputs at, keeping the dimensions
 %             of the on-screen figure. Default: '-r864' (for vector output
-%             only). Note that the -m option overides the -r option for
+%             only). Note that the -m option overrides the -r option for
 %             bitmap outputs only.
 %   -native - option indicating that the output resolution (when outputting
 %             a bitmap format) should be such that the vertical resolution
@@ -532,9 +532,9 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                 end
                 % Get the non-alpha image
                 if isbitmap(options)
-                    alph = alpha(:,:,ones(1, size(A, 3)));
-                    A = uint8(single(A) .* alph + 255 * (1 - alph));
-                    clear alph
+                    alpha = alpha(:,:,ones(1, size(A, 3)));
+                    A = uint8(single(A) .* alpha + 255 * (1 - alpha));
+                    clear alpha
                 end
                 if options.im
                     % Store the new image
@@ -1151,7 +1151,7 @@ function [fig, options] = parse_args(nout, fig, varargin)
     % Quick bail-out if no figure found
     if isempty(fig),  return;  end
 
-    % Do border padding with repsect to a cropped image
+    % Do border padding with respect to a cropped image
     if options.bb_padding
         options.crop = true;
     end
@@ -1214,19 +1214,19 @@ function [fig, options] = parse_args(nout, fig, varargin)
                 end
                 yl = yl + [-0.5 0.5] * (diff(yl) / (height - 1));
             end
-            hAx = get(hIm, 'Parent');
-            yl2 = get(hAx, 'YLim');
+            hex = get(hIm, 'Parent');
+            yl2 = get(hex, 'YLim');
             % Find the pixel height of the axes
-            oldUnits = get(hAx, 'Units');
-            set(hAx, 'Units', 'pixels');
-            pos = get(hAx, 'Position');
-            set(hAx, 'Units', oldUnits);
+            oldUnits = get(hex, 'Units');
+            set(hex, 'Units', 'pixels');
+            pos = get(hex, 'Position');
+            set(hex, 'Units', oldUnits);
             if ~pos(4)
                 continue
             end
             % Found a suitable image
             % Account for stretch-to-fill being disabled
-            pbar = get(hAx, 'PlotBoxAspectRatio');
+            pbar = get(hex, 'PlotBoxAspectRatio');
             pos = min(pos(4), pbar(2)*pos(3)/pbar(1));
             % Set the magnification to give native resolution
             options.magnify = abs((height * diff(yl2)) / (pos * diff(yl)));  % magnification must never be negative: issue #103
