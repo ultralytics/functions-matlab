@@ -5,6 +5,8 @@
 
 Welcome to Ultralytics' MATLAB Functions Repository! This hub is a collection of commonly used functions that are essential for various Ultralytics MATLAB projects. These scripts provide a foundation that assists in the development and research phases of machine learning and data analysis within MATLAB. Feel free to explore and utilize these utilities to streamline your work!
 
+[![Ultralytics Actions](https://github.com/ultralytics/functions-matlab/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/functions-matlab/actions/workflows/format.yml)
+
 For more information about Ultralytics, our mission, and the innovative work we're doing, fly over to our website: [Ultralytics](http://www.ultralytics.com).
 
 ## 📘 Description
@@ -23,17 +25,17 @@ Installing and getting started with these functions is a straightforward process
 
 1. Clone this repository to your local machine:
 
-   ```bash
-   $ git clone https://github.com/ultralytics/functions-matlab
-   ```
+    ```bash
+    $ git clone https://github.com/ultralytics/functions-matlab
+    ```
 
 2. Once cloned, you can add the repository to your MATLAB path to access the functions. Launch MATLAB and run the following command:
 
-   ```matlab
-   >> addpath(genpath('path_to_cloned_repo/functions-matlab'))
-   ```
+    ```matlab
+    >> addpath(genpath('path_to_cloned_repo/functions-matlab'))
+    ```
 
-   Replace `path_to_cloned_repo` with the path to the folder where you cloned the repository.
+    Replace `path_to_cloned_repo` with the path to the folder where you cloned the repository.
 
 ## 🧰 Usage
 
