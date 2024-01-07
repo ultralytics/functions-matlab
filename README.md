@@ -25,17 +25,17 @@ Installing and getting started with these functions is a straightforward process
 
 1. Clone this repository to your local machine:
 
-   ```bash
-   $ git clone https://github.com/ultralytics/functions-matlab
-   ```
+    ```bash
+    $ git clone https://github.com/ultralytics/functions-matlab
+    ```
 
 2. Once cloned, you can add the repository to your MATLAB path to access the functions. Launch MATLAB and run the following command:
 
-   ```matlab
-   >> addpath(genpath('path_to_cloned_repo/functions-matlab'))
-   ```
+    ```matlab
+    >> addpath(genpath('path_to_cloned_repo/functions-matlab'))
+    ```
 
-   Replace `path_to_cloned_repo` with the path to the folder where you cloned the repository.
+    Replace `path_to_cloned_repo` with the path to the folder where you cloned the repository.
 
 ## 🧰 Usage
 
