@@ -23,7 +23,7 @@ function print2eps(name, fig, export_options, varargin)
 %       bb_padding - Scalar value of amount of padding to add to border around
 %                    the cropped image, in points (if >1) or percent (if <1).
 %                    Can be negative as well as positive; Default: 0
-%       crop       - Cropping flag. Deafult: 0
+%       crop       - Cropping flag. Default: 0
 %       fontswap   - Whether to swap non-default fonts in figure. Default: true
 %       font_space - Character used to separate font-name terms in the EPS output
 %                    e.g. "Courier New" => "Courier-New". Default: ''
@@ -485,9 +485,9 @@ function print2eps(name, fig, export_options, varargin)
         if isequal(get(fig,'Color'),'none')
             hAxes = findall(fig,'type','axes');
             for idx = 1 : numel(hAxes)
-                hAx = hAxes(idx);
+                hex = hAxes(idx);
                 try
-                    hTitle = hAx.Title;
+                    hTitle = hex.Title;
                     oldColor = hTitle.Color;
                     if all(oldColor < 5*eps) || (ischar(oldColor) && lower(oldColor(1))=='k')
                         hTitles(end+1) = hTitle; %#ok<AGROW>

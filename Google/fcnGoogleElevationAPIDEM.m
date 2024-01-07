@@ -22,7 +22,7 @@ DEM.alt = reshape(DEM.altv,[ni ni]);
 % for i=1:ni
 %     fprintf('row %.0f\n',i)
 %     for j=1:ni
-%         z = hge.GetPointOnTerrainFromScreenCoords(xv(i), yv(j));
+%         z = he.GetPointOnTerrainFromScreenCoords(xv(i), yv(j));
 %         DEM.lat(i,j) = get(z,'Latitude');
 %         DEM.lng(i,j) = get(z,'Longitude');
 %         DEM.alt(i,j) = get(z,'Altitude');

@@ -18,7 +18,7 @@
 % Copyright (C) Oliver Woodford 2009-2010
 
 % Thanks to Aldebaro Klautau for reporting a bug when saving to
-% non-existant directories.
+% non-existent directories.
 
 function pdf2eps(source, dest)
 % Construct the options string for pdftops

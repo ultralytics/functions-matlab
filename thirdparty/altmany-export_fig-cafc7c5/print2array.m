@@ -12,14 +12,14 @@ function [A, bcol] = print2array(fig, res, renderer, gs_options)
 % This function outputs a bitmap image of the given figure, at the desired
 % resolution.
 %
-% If renderer is '-painters' then ghostcript needs to be installed. This
+% If renderer is '-painters' then ghostscript needs to be installed. This
 % can be downloaded from: http://www.ghostscript.com
 %
 % IN:
 %   figure_handle - The handle of the figure to be exported. Default: gcf.
 %   resolution - Resolution of the output, as a factor of screen
 %                resolution. Default: 1.
-%   renderer - string containing the renderer paramater to be passed to
+%   renderer - string containing the renderer parameter to be passed to
 %              print. Default: '-opengl'.
 %   gs_options - optional ghostscript options (e.g.: '-dNoOutputFonts'). If
 %                multiple options are needed, enclose in call array: {'-a','-b'}
@@ -180,7 +180,7 @@ function [A, bcol] = print2array(fig, res, renderer, gs_options)
         % Throw any error that occurred
         if err
             % Display suggested workarounds to internal print() error (issue #16)
-            fprintf(2, 'An error occured with Matlab''s builtin print function.\nTry setting the figure Renderer to ''painters'' or use opengl(''software'').\n\n');
+            fprintf(2, 'An error occurred with Matlab''s builtin print function.\nTry setting the figure Renderer to ''painters'' or use opengl(''software'').\n\n');
             rethrow(ex);
         end
         % Set the background color

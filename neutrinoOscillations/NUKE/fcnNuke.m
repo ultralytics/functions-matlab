@@ -34,10 +34,10 @@ mass_megatons = mass_tons*10^(-6);
 %75% are light water reactors.)
 
 %replacing 'power' with unity.  This is a linear scaling factor, and the
-%whole specturm is scaled later, so it should be oK.
+%whole spectrum is scaled later, so it should be oK.
 [Rn_E, xE, rtot] = fcnNukespectrum(n_Ebins,E_min,dE,mass_kt,range,1);%This should return the actual rates, not just the weighting probability function
 
-%Here we have to figure out the fraction of neut. not accoutned for by the
+%Here we have to figure out the fraction of neut. not accounted for by the
 %oscillations.
 
 %Ok, here Rn_E is the total number of aneutrino interaction expected.
@@ -53,7 +53,7 @@ Rn_E = Rn_E/tot;
 %procedure:
 %Normalize the regular spectrum (add to 1), then divide it by itself, after
 %oscillations.  The sum of the UNoscillated spectrum divided by the sum of
-%the OSCILATED spectrum (at 100 km) will give a factor to multiply det_t by 
+%the OSCILLATED spectrum (at 100 km) will give a factor to multiply det_t by 
 
 %This factor turns out to be 1.70150297273881 for a distance of 100km.
 
@@ -69,7 +69,7 @@ return_spec = Rn_E;
 %From the FORTRAN 
 %Ro_E is the energy spectrum expected after oscillation
 %P_E (osc, here) is the probability of detection due to oscillation
-%Rn_E is the originial (unoscillated) energy spectrum 
+%Rn_E is the original (unoscillated) energy spectrum 
 %so Ro_E = osc.* Rn_E
 
 %range_m = range*1000;    roverxE = (range_m./xE);    fraction = 0.02878679656440357*cos(6.1468*roverxE) + 0.07121320343559644*cos(6.35*roverxE) + 0.3678575741549828*cos(0.2032*roverxE) + 0.5321424258450172;

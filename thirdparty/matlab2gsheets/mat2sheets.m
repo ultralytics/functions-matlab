@@ -6,7 +6,7 @@ function status = mat2sheets(spreadsheetID, sheetID, sheetpos, d)
 %
 % ARGUMENTS:
 %       spreadsheetID:  (string), identifier from URL of your Google Sheet 
-%       sheetID:        (string), another identier from URL
+%       sheetID:        (string), another identifier from URL
 %       pos:            1x2 array with indices for [sheetrow, sheetcolumn]
 %                       to start pasting data 
 %       d:              array or cell array of data to paste into Sheet
@@ -34,7 +34,7 @@ function status = mat2sheets(spreadsheetID, sheetID, sheetpos, d)
 % originally published in the file exchange by Claudiu Giurumescu.
 % (https://www.mathworks.com/matlabcentral/fileexchange/31221-matlab-to-google-spreadsheets)
 %
-% I wrote this to accomodate for latest changes in Google API, added some 
+% I wrote this to accommodate for latest changes in Google API, added some 
 % comments, and simplified it all so that it can be implemented by the 
 % average user (hopefully!)
 %
@@ -352,7 +352,7 @@ function data = loadjson(fname,varargin)
 %
 %         Nedialko Krouchev: http://www.mathworks.com/matlabcentral/fileexchange/25713
 %            created on 2009/11/02
-%         Fran??ois Glineur: http://www.mathworks.com/matlabcentral/fileexchange/23393
+%         Fran??is Glineur: http://www.mathworks.com/matlabcentral/fileexchange/23393
 %            created on  2009/03/22
 %         Joel Feenstra:
 %         http://www.mathworks.com/matlabcentral/fileexchange/20565
@@ -364,7 +364,7 @@ function data = loadjson(fname,varargin)
 %      fname: input file name, if fname contains "{}" or "[]", fname
 %             will be interpreted as a JSON string
 %      opt: a struct to store parsing options, opt can be replaced by 
-%           a list of ('param',value) pairs - the param string is equivallent
+%           a list of ('param',value) pairs - the param string is equivalent
 %           to a field in opt. opt can have the following 
 %           fields (first in [.|.] is the default)
 %
@@ -933,7 +933,7 @@ function newdata=struct2jdata(data,varargin)
 %                            every child; 0 to disable
 %
 % output:
-%      newdata: the covnerted data if the input data does contain a JData 
+%      newdata: the converted data if the input data does contain a JData 
 %               structure; otherwise, the same as the input.
 %
 % examples:
@@ -1114,7 +1114,7 @@ function json=savejson(rootname,obj,varargin)
 %        opt.Compact [0|1]: 1- out compact JSON format (remove all newlines and tabs)
 %
 %        opt can be replaced by a list of ('param',value) pairs. The param 
-%        string is equivallent to a field in opt and is case sensitive.
+%        string is equivalent to a field in opt and is case sensitive.
 % output:
 %      json: a string in the JSON format (see http://json.org)
 %
@@ -1485,7 +1485,7 @@ else
     % visible properties
     propertynames = properties(item);
     for p = 1:numel(propertynames)
-        for o = numel(item):-1:1 % aray of objects
+        for o = numel(item):-1:1 % array of objects
             st(o).(propertynames{p}) = item(o).(propertynames{p});
         end
     end

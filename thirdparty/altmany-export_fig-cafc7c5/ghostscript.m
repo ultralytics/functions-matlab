@@ -5,7 +5,7 @@ function varargout = ghostscript(cmd)
 %   [status result] = ghostscript(cmd)
 %
 % Attempts to locate a ghostscript executable, finally asking the user to
-% specify the directory ghostcript was installed into. The resulting path
+% specify the directory ghostscript was installed into. The resulting path
 % is stored for future reference.
 % 
 % Once found, the executable is called with the input command string.
@@ -39,7 +39,7 @@ function varargout = ghostscript(cmd)
 % 27/02/15 - If Ghostscript croaks, display suggested workarounds
 % 30/03/15 - Improved performance by caching status of GS path check, if ok
 % 14/05/15 - Clarified warning message in case GS path could not be saved
-% 29/05/15 - Avoid cryptic error in case the ghostscipt path cannot be saved (issue #74)
+% 29/05/15 - Avoid cryptic error in case the ghostscript path cannot be saved (issue #74)
 % 10/11/15 - Custom GS installation webpage for MacOS. Thanks to Andy Hueni via FEX
 %}
 
