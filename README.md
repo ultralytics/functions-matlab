@@ -1,5 +1,5 @@
 <br>
-<img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320">
+<a href="https://ultralytics.com" target="_blank"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
 
 # 🚀 Introduction
 
@@ -25,17 +25,17 @@ Installing and getting started with these functions is a straightforward process
 
 1. Clone this repository to your local machine:
 
-    ```bash
-    $ git clone https://github.com/ultralytics/functions-matlab
-    ```
+   ```bash
+   $ git clone https://github.com/ultralytics/functions-matlab
+   ```
 
 2. Once cloned, you can add the repository to your MATLAB path to access the functions. Launch MATLAB and run the following command:
 
-    ```matlab
-    >> addpath(genpath('path_to_cloned_repo/functions-matlab'))
-    ```
+   ```matlab
+   >> addpath(genpath('path_to_cloned_repo/functions-matlab'))
+   ```
 
-    Replace `path_to_cloned_repo` with the path to the folder where you cloned the repository.
+   Replace `path_to_cloned_repo` with the path to the folder where you cloned the repository.
 
 ## 🧰 Usage
 
@@ -73,7 +73,7 @@ For bug reports, feature requests, and contributions, head to [GitHub Issues](ht
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
   <a href="https://www.tiktok.com/@ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-tiktok.png" width="3%" alt="Ultralytics TikTok"></a>
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://www.instagram.com/ultralytics/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-instagram.png" width="3%" alt="Ultralytics Instagram"></a>
+  <a href="https://ultralytics.com/bilibili"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-bilibili.png" width="3%" alt="Ultralytics Instagram"></a>
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
   <a href="https://ultralytics.com/discord"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="3%" alt="Ultralytics Discord"></a>
 </div>
