@@ -279,7 +279,7 @@ Also, when using the painters renderer, ghostscript will sometimes throw an erro
 
 **Lighting and transparency** - when using the painters renderer, transparency and lighting effects are not supported. Sorry, but this is an inherent feature of MATLAB's painters renderer. To find out more about the capabilities of each rendering method, see [here](http://www.mathworks.com/access/helpdesk/help/techdoc/creating_plots/f3-84337.html#f3-102410). You can still export transparent objects to vector format (SVG) using the excellent [plot2svg](http://www.mathworks.com/matlabcentral/fileexchange/7401) package, then convert this to PDF, for example using [Inkscape](http://inkscape.org/). However, it can't handle lighting.
 
-**Lines in patch objects** - when exporting patch objects to PDF using the painters renderer (default), sometimes the output can appear to have lines across the middle of rectangular patches; these lines are the colour of the background, as if there is a crack in the patch, allowing you to see through. This appears to be due to bugs in MATLAB's internal vector rendering code. These lines can often be removed from the PDF using software such as [InkScape](https://inkscape.org). Sometimes disabling anti-aliasing in the PDF-reader software can get rid of the lines ([discussion](https://github.com/altmany/export_fig/issues/44)).
+**Lines in patch objects** - when exporting patch objects to PDF using the painters renderer (default), sometimes the output can appear to have lines across the middle of rectangular patches; these lines are the colour of the background, as if there is a crack in the patch, allowing you to see through. This appears to be due to bugs in MATLAB's internal vector rendering code. These lines can often be removed from the PDF using software such as [InkScape](https://inkscape.org/). Sometimes disabling anti-aliasing in the PDF-reader software can get rid of the lines ([discussion](https://github.com/altmany/export_fig/issues/44)).
 
 **Out of memory** - if you run into memory issues when using export_fig, some ways to get round this are:
 
@@ -296,7 +296,7 @@ If you think you have found a genuine error or issue with export_fig **that is n
 
 Secondly, if exporting to bitmap, do try all the renderers (i.e. try the options `-opengl`, `-zbuffer` and `-painters` separately), to see if one of them does produce an acceptable output, and if so, use that.
 
-If this still does not help, then ensure that you are using the latest version of export_fig, which is available [here](https://github.com/altmany/export_fig/archive/master.zip).
+If this still does not help, then ensure that you are using the latest version of export_fig, which is available [here](https://codeload.github.com/altmany/export_fig/zip/refs/heads/master).
 
 If the figure looks correct on screen, but an error exists in the exported output (which cannot be solved using a different renderer) then please feel free to raise an [issue](https://github.com/altmany/export_fig/issues). Please be sure to include the .fig file, the export_fig command you use, the output you get, and a description of what you expected. I can't promise anything, but if it's easy to fix I may indeed do it. Often I will find that the error is due to a bug in MATLAB's `print` function, in which case I will suggest you submit it as a bug to TheMathWorks, and inform me of any fix they suggest. Also, if there's a feature you'd like that isn't supported please tell me what it is and I'll consider implementing it.
 
