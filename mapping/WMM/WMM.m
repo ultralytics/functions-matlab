@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function zi = WMM(lat,lon,type)
 %WORLD MAGNETIC MODEL
 %INPUTS: lat (deg -90 to 90), lng (deg -180 to 180), type={'Declination','Inclination','HorizontalIntensity','TotalIntensity','X','Y','Z'}

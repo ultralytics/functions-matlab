@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function ha = fcn4view(h,str,hscale)
 if nargin==0; h=gca; end
 if nargin<3; hscale = 2; end

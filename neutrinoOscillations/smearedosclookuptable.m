@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 flags.status.aprioribackground = 0;
 
 r1 = table.mev.r;

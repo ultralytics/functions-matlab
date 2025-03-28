@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function C0 = fcn2vintercept(A,ux1,uy1,uz1)
 [nf, ntp] = size(ux1);
 ova=ones(1,nf);

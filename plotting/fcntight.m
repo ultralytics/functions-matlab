@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function varargout = fcntight(varargin)
 %example: fcntight('y'); fcntight(gca,'xy'); fcntight('evenx'); 
 %example: fcntight('evenjointxyz'); fcntight('c') for color

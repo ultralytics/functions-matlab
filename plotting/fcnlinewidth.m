@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function fcnlinewidth(varargin)
 %example for legends: fcnlinewidth(findobj(gcf,'Tag','legend'),10)
 

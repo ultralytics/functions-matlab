@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [P,F] = polyfitrobust(X,Y,N,srl,ni,residuals)
 if nargin<4 || isempty(srl); srl=3; end
 if nargin<5 || isempty(ni); ni=3; end

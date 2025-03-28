@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function cc = fcnelaz2CC(el,az)
 %angles in radians
 if nargin==1

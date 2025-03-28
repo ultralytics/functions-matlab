@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function s = fcnspec1s(MeV, r1, op, rp, np, day, r0, f1) %specscaled
 %s = fcnspec1s(Evector (MeV),range (km), oscillation parameters (optional), reactor power (GW), detector protons, observation time (days), optional, optional)
 %s.r0 = [1x921 double] unscaled zero range spectrum vector

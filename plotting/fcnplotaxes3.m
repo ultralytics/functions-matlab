@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function fcnplotaxes3(r)
 %r = range of axes
 if nargin==0; r = 1.25;  end

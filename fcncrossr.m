@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function c = fcncrossr(a,b)
 %for row vectors. use fcncrossc for column vectors
 %a and b are nx3 or 1x3

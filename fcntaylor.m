@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function y = fcntaylor(F,order)
 %fifth order taylor series expansion
 %for EKF, Phi=exp(A*dt)=fcntaylor(A*dt), where A is the continuous (state-space) version of Phi

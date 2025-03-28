@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function pf = fcnlastfileloaded(pf)
 if nargin==0; pf=''; end
 pfs = [tempdir 'lastTextFileLoaded.txt'];

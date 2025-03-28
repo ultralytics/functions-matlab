@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function h=hist2(X,Y,v,type,srf)
 %v=hist3([X Y],{vx,vy});
 sigmaRejectionFlag = true;

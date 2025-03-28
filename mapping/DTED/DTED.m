@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function alt = DTED(lat,lon)
 %INPUTS: lat (deg -90 to 90), lng (deg -180 to 180)
 %OUTPUTS: DTED alt above EGM96 geoid (m). Try 'llag2lla.m' for ellipsoid elevations

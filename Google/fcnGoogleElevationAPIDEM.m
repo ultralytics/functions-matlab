@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function DEM = fcnGoogleElevationAPIDEM(latv,lngv,geoidstr)
 ni = numel(latv); 
 [DEM.lat, DEM.lng] = meshgrid(latv, lngv);

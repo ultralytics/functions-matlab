@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function closeallexcept(hf)
 %closes all open figures except hf
 hc = get(0,'children');  

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function elevation = fcnGoogleElevation(lat,lng)
 %elevation in meters above geoid, lat lng in degrees
 %use 'llag2lla.m' for ellipsoid elevations

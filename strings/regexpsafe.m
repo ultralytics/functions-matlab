@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function s = regexpsafe(varargin)
 s = varargin{1};
 for i=2:nargin

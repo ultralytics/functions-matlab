@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function DCM_W2B = fcnVEC2DCM_W2B(cc)
 %roll=0;
 %pitch=asin(-cc(3)/norm(cc));

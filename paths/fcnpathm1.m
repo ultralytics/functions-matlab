@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [str, t] = fcnpathm1(str)
 %path minus 1
 

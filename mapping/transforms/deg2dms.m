@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function dms=deg2dms(deg)
 % deg2DMS  Converts degians to degrees-minutes-seconds. Vectorized.
 % Version: 12 Mar 00

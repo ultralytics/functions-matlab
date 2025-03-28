@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function y=fcnmacls(x)
 %transforms 1xnm size string into proper nxm size (default on PC)
 %ON PC: str = ls(pathname);

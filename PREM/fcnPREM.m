@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function density = fcnPREM(r)
 %https://docs.google.com/spreadsheets/d/1teHQhwHQu2Wo3789YnPQB1poeDJ1plCgc5Fowr_Y7oU/edit#gid=0
 

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [colormat, colorcell] = fcndefaultcolors(i,n)
 %see function c = fcnstr2rgbcolor(c)
 

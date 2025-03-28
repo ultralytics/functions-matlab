@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function lla = lla2llag(lla,EGM)
 if nargin==1;  EGM = load('EGM96single.mat');  end
 lla(:,3) = lla(:,3) - egm1(EGM,lla(:,1),lla(:,2));

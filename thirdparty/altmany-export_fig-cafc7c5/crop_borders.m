@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [A, vA, vB, bb_rel] = crop_borders(A, bcol, padding, crop_amounts)
 %CROP_BORDERS Crop the borders of an image or stack of images
 %

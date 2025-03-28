@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function x = fcnrandcdf(cdfy,cdfx,nr,interptype)
 %MUST BE COLUMN VECTOR INPUTS!!
 if nr==0

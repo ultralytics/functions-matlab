@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function G = fcnloadGEANT(filename,maxlines)
 if nargin<2
     maxlines=1.2E7;   if nargin==0;  filename = [];  end

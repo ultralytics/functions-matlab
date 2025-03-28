@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function y = NNwaveformStats(x,dim)
 if nargin==1; dim=1; end
 xmin=min(x,[],dim);

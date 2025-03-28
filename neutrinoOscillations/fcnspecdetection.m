@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function val = fcnspecdetection(E)
 %detection cross section
 %E in MeV

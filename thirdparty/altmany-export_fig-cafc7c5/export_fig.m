@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
 %EXPORT_FIG  Exports figures in a publication-quality format
 %

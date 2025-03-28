@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function fh = copyfig(fh)
 %COPYFIG Create a copy of a figure, without changing the figure
 %

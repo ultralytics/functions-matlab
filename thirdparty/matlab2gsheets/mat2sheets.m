@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function status = mat2sheets(spreadsheetID, sheetID, sheetpos, d)
 % status = mat2sheets('1y_HrdObX7FLz86mZCFfr-7AIlJaH2IwAJEa2MxZS5GU','1245181223', [24 1], {12,'abc',15})
 % This function takes values from an array or cell array and places them in

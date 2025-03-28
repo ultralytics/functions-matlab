@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function L = fcnpdfpoiss(k,lambda)
 %lambda = poisson mean and variance
 %k = evaluated at k

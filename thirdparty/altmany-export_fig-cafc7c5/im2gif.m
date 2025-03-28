@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 %IM2GIF Convert a multiframe image to an animated GIF file
 %
 % Examples:

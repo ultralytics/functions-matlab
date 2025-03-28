@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function liteviewer
 clc; close all; format short g 
 s = mfilename('fullpath'); 

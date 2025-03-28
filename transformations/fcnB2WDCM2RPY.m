@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function rpy = fcnB2WDCM2RPY(DCM)
 % phi = atan(DCM(2,3)/DCM(3,3));
 % theta = asin(-DCM(1,3));

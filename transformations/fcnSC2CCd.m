@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function cc = fcnSC2CCd(r,el,az)
 if nargin==1
     az = r(:,3);

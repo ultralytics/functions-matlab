@@ -1,3 +1,4 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 %MeV = linspace(1.8,8,600);
 %r1 = linspace(180,200,50)';

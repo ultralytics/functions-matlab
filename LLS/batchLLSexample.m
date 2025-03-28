@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 %batch linear least squares example
 %Bar Shalom eqn 3.4.1-9, page 130
 

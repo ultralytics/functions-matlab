@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function a = ischecked(h)
 %'true' if a checkbox is checked: get(h,'checked')=='on' 
 %'false' otherwise: get(h,'checked')=='off'

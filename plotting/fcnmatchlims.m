@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function fcnmatchlims(h0,h)
 if nargin==0 %match all subplot axes limits to the biggest one
     h = findobj(gcf,'type','axes','-not','Tag','legend');  n=numel(h);

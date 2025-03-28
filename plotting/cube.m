@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [x, y, z, h, VX,VY,VZ] = cube(length,p0,plotflag)
 %length = [100 200 300]; p0 = [0 0 0];
 if nargin==1

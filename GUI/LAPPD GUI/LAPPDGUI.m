@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = LAPPDGUI()
 clc; close all; format short g 
 s = mfilename('fullpath'); s = s(1:find(s==filesep,1,'last')); cd(s)

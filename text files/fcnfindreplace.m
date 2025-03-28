@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = fcnfindreplace(oldstr, newstr, folder, optionalExtension)
 %find and replace in all files in ALL folder and subfolders
 %extension (Optional) = '.kml' or '.txt' 

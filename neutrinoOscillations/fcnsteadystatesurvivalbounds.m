@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [ output_args ] = fcnsteadystatesurvivalbounds( input_args )
 
 n=10000;

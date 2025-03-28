@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = resavematfiles()
 % CAUTION. This function loads EVERY mat file in the directory tree and 
 % resaves it with compression. This file is useful for archiving old matlab

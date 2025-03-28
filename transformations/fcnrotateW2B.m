@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function a = fcnrotateW2B(r,p,y,x)
 sr=sin(r);  sp=sin(p);  sy=sin(y);
 cr=cos(r);  cp=cos(p);  cy=cos(y);

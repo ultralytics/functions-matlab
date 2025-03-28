@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [mu, sigma] = weightedMean(x,w,dim)
 %x = NxM, weights = Nx1
 

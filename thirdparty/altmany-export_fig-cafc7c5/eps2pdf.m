@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function eps2pdf(source, dest, crop, append, gray, quality, gs_options)
 %EPS2PDF  Convert an eps file to pdf format using ghostscript
 %

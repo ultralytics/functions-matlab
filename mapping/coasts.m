@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [h,a] = coasts(ha)
 % coasts = gshhs('gshhs_i.b');  cl = [coasts.Level];  coasts = coasts(cl==1);    
 % Lat = [coasts.Lat];

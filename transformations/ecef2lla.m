@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 % ECEF2LLA - convert earth-centered earth-fixed (ECEF)
 %            cartesian coordinates to latitude, longitude,
 %            and altitude

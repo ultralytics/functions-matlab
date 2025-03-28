@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [ellipse, cross, h] = fcnerrorellipse( C , mu, conf, plotflag)
 %      'C' - Alternate method of specifying the covariance matrix
 %      'mu' - Alternate method of specifying the ellipse (-oid) center

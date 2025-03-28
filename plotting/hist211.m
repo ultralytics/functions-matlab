@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function ha3 = hist211(X,Y,nb,type)
 % clc; close all
 % X = randn(1E4,1)*.98;

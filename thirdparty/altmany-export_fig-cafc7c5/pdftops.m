@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function varargout = pdftops(cmd)
 %PDFTOPS  Calls a local pdftops executable with the input command
 %

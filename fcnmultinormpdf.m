@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [pdf, lpdf] = fcnmultinormpdf(x, u, C)
 %Multivariate normal distribution
 %x = evaluation point (n x k)

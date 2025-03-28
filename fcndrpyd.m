@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function drpy = fcndrpyd(rpy1,rpy2)
 %rpy2 - rpy1; takes degrees
 %difference between two azimuth angles, unwraps everything!!

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [el,az] = fcnelaz(x,y,z)
 if nargin==1
     z = x(:,3);

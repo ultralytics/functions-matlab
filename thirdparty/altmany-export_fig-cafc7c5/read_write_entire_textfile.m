@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 %READ_WRITE_ENTIRE_TEXTFILE Read or write a whole text file to/from memory
 %
 % Read or write an entire text file to/from memory, without leaving the

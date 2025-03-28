@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function F = lowPassFilter(passband,stopband,sps)
 if nargin==0
     passband = 60E6; % (Hz)  

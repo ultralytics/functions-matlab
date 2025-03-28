@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function varargout = ghostscript(cmd)
 %GHOSTSCRIPT  Calls a local GhostScript executable with the input command
 %

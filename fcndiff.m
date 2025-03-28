@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function dx = fcndiff(x,n,dim)
 if nargin==2
     dim=n; %dimension to take derivative along

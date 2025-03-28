@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function hb = fcnerrorbar(varargin)
 if isgraphics(varargin{1})
     ha=varargin{1}; varargin=varargin(2:end);

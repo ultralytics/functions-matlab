@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [ha, hf] = fig(nr,nc,hscale,wscale,border)
 %example:
 %fig(2,1,1.5,1);

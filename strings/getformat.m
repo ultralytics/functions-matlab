@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [str, nn, vn, ns, vs] = getformat(fid)
 %returns format string of text file, i.e. str='%f%f%s%f';
 %nn = number of number columns

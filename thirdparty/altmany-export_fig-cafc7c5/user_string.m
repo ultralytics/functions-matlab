@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function string = user_string(string_name, string)
 %USER_STRING  Get/set a user specific string
 %

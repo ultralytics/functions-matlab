@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [X,m]=getscreen(varargin)
 %GETSCREEN replacement for GETFRAME for systems with multiple monitors. Use it just like you use GETFRAME.
 %Can also be used to take screenshots of non-MATLAB windows. Requires JAVA.

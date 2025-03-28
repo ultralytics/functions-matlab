@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function L = fcnthetapdf(snr, ct, st)
 %DAN BONDY'S ANGLE LIKELIHOOD FOR A 3D WHITE NOISE VECTOR ANGLE
 %ct = cosine theta;

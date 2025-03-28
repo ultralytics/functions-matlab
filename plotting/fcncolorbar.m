@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = fcncolorbar(alpha,units,hf)
 %sets colorbar units and transparency (1=not transparent, 0=transparent);
 

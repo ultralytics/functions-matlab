@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [netb, perf, sigma] = NNtrain(inputs,targets,hiddenLayers,iterations,weights,sizemethod,sizegain)
 x = inputs';  nx=size(inputs,2);
 t = targets'; nt=size(targets,2);

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [x, inliers] = fcnsigmarejection(x,srl,ni,str)
 if nargin==1
     srl = 3; %rejection sigma level (i.e. 3sigma)

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function Pab = fcnnuosc(varargin)
 %varargin = [E(GeV),L(km),nflavors,dms,t,s2t,s22t,a,b]
 %EXAMPLE: L = linspace(.002,100,600)'; E = (1.8:.01:10)/1000; a=1; b=1; Pab = fcnnuosc(E,L,3,[],[],[],[],a,b); fig; pcolor(L,E*1E3,Pab'); shading flat; xyzlabel('range (km)','energy (MeV)','',sprintf('P_%g_%g',a,b)); colorbar

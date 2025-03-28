@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function lla = llag2lla(lla)
 EGM = load('EGM96single.mat');
 EMGoffset = egm1(EGM,lla(:,1),lla(:,2)); %m

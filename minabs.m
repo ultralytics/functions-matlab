@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function y = minabs(x,dim)
 %same as min, but returns values closest to zero while retaining sign
 

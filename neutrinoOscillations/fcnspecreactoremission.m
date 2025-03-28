@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [ sourceSpectrum ] = fcnspecreactoremission(E)
 % E (MeV) i.e. E=[1.8 1.81 ... 11] MeV
 

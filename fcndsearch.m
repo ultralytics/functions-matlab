@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [x, np] = fcndsearch(v,fraction)
 v=v(:);
 vs = sort(v);

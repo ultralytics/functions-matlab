@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function result = GetGoogleSpreadsheet(DOCID)
 % result = GetGoogleSpreadsheet(DOCID)
 % Download a google spreadsheet as csv and import into a Matlab cell array.
