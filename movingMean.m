@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [mu,s,F,x] = movingMean(X,Y,x,plotflag)
 %X = x data
 %Y = y data

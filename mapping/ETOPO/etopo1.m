@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [zi, ETOPO] = etopo1(lat,lon,ETOPO)
 if nargin==2 || isempty(ETOPO)  %LOAD .MAT FILE
     fprintf('Loading ETOPO Ice Data... '); tic

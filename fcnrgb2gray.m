@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function J = fcnrgb2gray(I)
 if isinteger(I)
     %coef = [0.298936021293776         0.587043074451121         0.114020904255103];

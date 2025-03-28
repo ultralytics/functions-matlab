@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [template,h]=fcnpulsetemplate(y,t)
 % y are waveforms (nr samples by nc waveforms, i.e. 256x30000)
 % t are alignment points for each waveform, i.e. 1x30000

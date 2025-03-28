@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function symbol = fcnatomicnumber2symbol(an)
 %NUMBER2CHEMSYM Get the chemical symbol for an atomic number.
 %   symbol = NUMBER2CHEMSYM(Z) returns the chemical symbol of element with

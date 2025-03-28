@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function h=subaxis(varargin)
 %SUBAXIS Create axes in tiled positions. (just like subplot)
 %   Usage:

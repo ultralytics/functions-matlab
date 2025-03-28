@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [op, s] = fcnrandosc(nr, input, flags)
 %[dm^2_12, dm^2_13, sin^2theta12, sin^2theta13];
 

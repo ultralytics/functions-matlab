@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function val = fcnatan2(y,x)
 val = 2*atan((sqrt(x.^2+y.^2)-x)./y);
 

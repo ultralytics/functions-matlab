@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [hasdata, aout, w, xout, integral, yout, minout] = fcnpulsewidth(y,fraction,heightrange,widthrange,saturation,method)
 % method = 'fraction', 'amplitude', or 'maximum'
 % y = 256x10 = 256 samples and 10 channels

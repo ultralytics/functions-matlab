@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function str = fcnincrementfname(str)
 if exist([pwd filesep str],'file')==0
     return

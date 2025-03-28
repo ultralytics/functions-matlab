@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [c,indA,indC,n] = fcnunique(a,rows) 
 %UNIQUE Set unique.
 %   C = UNIQUE(A) for the array A returns the same values as in A but with 

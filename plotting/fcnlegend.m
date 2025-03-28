@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function hl = fcnlegend(hf,alpha,type)
 if nargin<3; type = 'normal';  end
 hl = [];

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [ ecef ] = ned2ecef(DEM,ned)
 ecef = ned*DEM.DCM_ECEF2NED + ones(size(ned,1),1)*DEM.centerecef;
 

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function mperdeg = fcnmperLLAdeg(LLA)
 %from http://en.wikipedia.org/wiki/Latitude#The_length_of_a_degree_of_latitude
 %determines the meters per degree longitude and latitude at any location (LLA) on the Earth's surface.

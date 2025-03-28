@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 %USING_HG2 Determine if the HG2 graphics engine is used
 %
 %   tf = using_hg2(fig)

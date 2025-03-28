@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [n, epdf] = fcnexplosion(input, table, d1)
 
 %d1 = d(1);

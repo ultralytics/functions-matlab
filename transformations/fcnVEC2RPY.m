@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function rpy = fcnVEC2RPY(cc)
 %rpy = [phi theta psi]
 %rpy = [zeros(nr,1)   asin(-z./r)   atan2(y,x)]; %rpy=[phi theta psi]

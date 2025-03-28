@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = xyzlabel(varargin)
 %xyzlabel(h,strx,stry,strz) or xyzlabel(strx,stry,strz) or xyzlabel([],stry)
 sx = [];

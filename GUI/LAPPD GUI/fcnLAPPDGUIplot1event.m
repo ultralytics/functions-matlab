@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function fcnLAPPDGUIplot1event(varargin)
 if nargin==0 || isgraphics(varargin{1}) 
     G = evalin('base','G');

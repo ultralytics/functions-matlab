@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [cc, az1, el1, naz, nel, elazCells, elvec, azvec] = fcnuniformsphere(nel,naz,plotflag)
 %cc = x y z unit vectors that make up a uniform sphere
 if nargin==2

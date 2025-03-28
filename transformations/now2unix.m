@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function unix = now2unix(date)
 if nargin==0; date=now; end
 %**************TRY posixtime.m INSTEAD, 10X FASTER!! *****************

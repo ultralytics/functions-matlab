@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function y = fcncdfnorm(x,mu,s)
 %x should be row vector
 %mu should be col vector

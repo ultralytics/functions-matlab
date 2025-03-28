@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function h = motionNTC(x,particlename,processname,h,haxes1)
 if haxes1~=gca
     return

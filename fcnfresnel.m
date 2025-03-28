@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function R = fcnfresnel(n1,n2,ct)
 %http://en.wikipedia.org/wiki/Fresnel_equations
 %equations for photon reflection and refraction between two materials

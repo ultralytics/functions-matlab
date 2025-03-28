@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [ctid1, lv1] = fcntid2ctid(tid1,tid,ptid) %trackID to children's trackID
 %ctid1 = vector of unique children (and grandchildren etc.) track IDs
 %lv1 = logical indicating presence of offspring in tid vector

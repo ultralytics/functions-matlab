@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function i = fcnindex1(xi, x, method)
 %str could be:
 %'*nearest'

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = fcnRCcircuit()
 %RC Circuit Model from http://www.referencedesigner.com/rfcal/cal_05_01.php
 

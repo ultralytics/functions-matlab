@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [X] = randncorr(ns,T)
 %ns = number of samples [streams, samples], i.e. ns=[1 256]
 %T = autocorrelation constant (in samples), i.e. T=20

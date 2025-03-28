@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function x = centers2edges(x)
 %inputs a 1D vector x of histogram bin centers
 %outputs a 1D vector x of histogram bin edges

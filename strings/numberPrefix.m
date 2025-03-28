@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [prefix,n]=numberPrefix(n)
 if n<1E-9
     prefix='p';  n=n/1E-12; %pico

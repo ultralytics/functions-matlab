@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function Yi = qinterp1(x,Y,xi,methodflag)
 % Performs fast interpolation compared to interp1
 %

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [rm,cm] = fcnmapprojection(rm,cm,projection)
 lambda  = cm*d2r;   %x longitudes (deg) i.e. size 360x180
 phi     = rm*d2r;   %y latitudes (deg) i.e. size 360x180

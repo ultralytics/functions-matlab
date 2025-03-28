@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function hout = fcnscatter3(h,x,y,z,s,c)
 cm = colormap;
 ni = size(cm,1);

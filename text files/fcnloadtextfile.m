@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function A = fcnloadtextfile(fname,maxlines,hsflag)
 if nargin<2 || ~exist('maxlines','var');  maxlines = 1E6;  end
 if nargin<3 || ~exist('hsflag','var');  hsflag = true;  end %header search flag

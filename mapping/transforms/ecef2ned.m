@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function ned = ecef2ned(DEM,ecef)
 
 if nargin==1

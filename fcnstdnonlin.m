@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function s = fcnstdnonlin(x,cl,mu)
 %this function recovers the extent of x from the mean which contains 68.3% of the population
 %cl = confidence level (fraction)

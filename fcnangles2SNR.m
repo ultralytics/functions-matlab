@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [SNR, cta]= fcnangles2SNR(a,b,weights)
 %A = nx3 vectors
 %B = nx3 vectors (optional)

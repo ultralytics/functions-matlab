@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function deg=dms2deg(dms)
 % DMS2DEG  Converts degrees-minutes-seconds to decimal degrees.
 %   Vectorized.

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function ecef = lla2ecef(lla)
 %lla = [lat (deg), lng (deg), altitude (m)]
 %ecef = km

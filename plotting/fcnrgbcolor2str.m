@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function s = fcnrgbcolor2str(c)
 %  converts rgb triple [0 1 0] to string 'g' etc.
 % see also fcnstr2rgbcolor

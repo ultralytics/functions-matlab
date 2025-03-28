@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function zi = egm1(lat,lon,EGM) %xi=lats, yi=lngs
 %elevations in meters above the wgs84 ellipsoid
 %[x,y] = ndgrid(EGM.latbp,EGM.lonbp); %pcolor(x,y,F(-x,y);

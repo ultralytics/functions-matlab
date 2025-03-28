@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [mmx,mmy,mmz,mmc,x,y,z,c] = fcnaxesdatalims(h,sf) %sf=sigmaflag
 nin = nargin;
 if nin==0; h = gca; end

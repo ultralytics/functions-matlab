@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function b = fcnlightencolor(a,x)
 %a = input colors as cell or nx3 matrix
 %x = optional lightening amount (0 to 1), default = .7

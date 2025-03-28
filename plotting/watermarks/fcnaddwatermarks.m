@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = fcnaddwatermarks(fname)
 if nargin==0 || isempty(fname)
     [fname,pname]=uigetfile('*.*','Select image to add watermarks to:','MultiSelect','on');

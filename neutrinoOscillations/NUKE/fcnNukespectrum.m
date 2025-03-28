@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [rate, rateX, rtot] = fcnNukespectrum(n_Ebins, E_min, dE, mass, distance, power)
 %*  uses fitted function to rate calculations for 10kilotons at 50km from San Onofre/year/MeV
 %*  call with number of energy bins bins, E_min/EmV, dE/MeV and array rate(n_Ebins)

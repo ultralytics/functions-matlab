@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = fcncontextmenuexpand(h0)
 %h0 = handle that a right click will instigate a context menu to open
 %h2 = the axes that will open up larger in a new figure

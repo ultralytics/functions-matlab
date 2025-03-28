@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function str = waitbarParfor(N)
 if nargin>0 && N>0
     parfor_progress(N);

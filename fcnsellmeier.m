@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function n = fcnsellmeier(wl,b1,c1,b2,c2,b3,c3)
 %http://refractiveindex.info/?shelf=organic&book=polystyren&page=Sultanova
 x = (wl/1E3).^2; %wavelength in micrometers squared

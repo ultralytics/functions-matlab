@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [y, x, h] = fcnhistc(z,x,c,plottype,displayname)
 if nargin==1; x=30; end;  nx = numel(x);  if size(z,1)==1; z=z(:); end
 z=double(z(isfinite(z)));

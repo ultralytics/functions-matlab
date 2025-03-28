@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [b,c] = fesplit(a)
 %filename and extension split.
 %i.e ['test','m'] = fesplit('test.m')

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 %Lifting code from Stephen Dye's fortran:  (nuclear detonation)
 %B.Dobbs Feb 13,2010.
 function [ xE, return_spec ] = fcnNuke(n_Ebins, E_min, E_max, mass_kg, range, yield, t_min, t_max)

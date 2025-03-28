@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function lon = longitude180to360(lon)
 %lon (deg)
 %converts [-180 to 180] to [0 to 360] deg format

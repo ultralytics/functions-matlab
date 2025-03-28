@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function sc = fcnCC2SC(x,y,z)
 %degrees!
 if nargin==1

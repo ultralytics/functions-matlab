@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function DCM_ECEF2NED = fcnLLA2DCM_ECEF2NED(LLA)
 %http://www.mathworks.com/help/toolbox/aeroblks/directioncosinematrixeceftoned.html
 lat = LLA(1);

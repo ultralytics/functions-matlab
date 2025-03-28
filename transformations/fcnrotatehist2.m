@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [X,Y] = fcnrotatehist2(X,Y)
 %this function detrends a histogram
 %Z=zeros(size(X));

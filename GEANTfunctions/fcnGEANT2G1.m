@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function G1 = fcnGEANT2G1(G,input)
 offset = input.neutrino.pN.CC_detector;
 C_G2N = [   0 0 1

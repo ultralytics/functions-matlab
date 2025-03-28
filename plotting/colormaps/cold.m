@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function cmap = cold(m)
 %COLD    Black-Blue-Cyan-White Color Map
 %   COLD(M) returns an M-by-3 matrix containing a "cold" colormap

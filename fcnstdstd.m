@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function s = fcnstdstd(y0, k)
 %standard deviation of the standard deviation (y0) after (k) MC runs
 %(approximation)

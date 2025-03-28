@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = fcnribbon(xh,yh)
 %xh=[1 30] histogram bin x values
 %yh=[24 30], 24 pmts for 30 histogram bins

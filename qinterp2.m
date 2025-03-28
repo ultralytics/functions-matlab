@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function Zi = qinterp2(X,Y,Z,xi,yi,methodflag)
 %QINTERP2 2-dimensional fast interpolation
 % qinterp2 provides a speedup over interp2 in the same way that

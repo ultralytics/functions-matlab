@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function h=fcnplot3(x,varargin)
 switch nargin
     case 0

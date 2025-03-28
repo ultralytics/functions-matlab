@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function c = whiteblue(m)
 if nargin==0; m=64; end
 i = m:-1:1;

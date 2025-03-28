@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = startup()
 %CHANGES USERPATH TO userpath('C:\Users\gjocher\Google Drive\MATLAB') on PC or '/Users/glennjocher/Google Drive/MATLAB/' on mac
 

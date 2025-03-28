@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [r,c] = fcnind2sub(s,i)
 % i = [ 1   3
 %       2   4 ];

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function theta = fcndaz(az1,az2)
 %difference between two azimuth angles, unwraps everything!!
 

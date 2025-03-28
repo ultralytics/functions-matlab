@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [coefficients, sumSquaredResiduals] = polyfitOrthogonal(x,y,n)
 %THIS FUNCTION fits a 1st order polynomial using orthogonal regression to the equation y=b1*x+b0
 %CALL THIS FUNCTION LIKE THIS:

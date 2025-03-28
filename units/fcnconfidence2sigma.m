@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function k = fcnconfidence2sigma(conf,n)
 %converts confidence fraction (0 to 1) into a sigma multiple.
 %i.e. 1.0006 = fcnconfidence2sigma(.683,1)

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = rea()
 %removes empty axes
 ha = findobj(gcf,'Type','axes','-and','Tag','');

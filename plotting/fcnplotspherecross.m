@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function fcnplotspherecross(el0,az0,span,x0,r)
 %el0 = elevation of cross
 %az0 = azimuth of cross

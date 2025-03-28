@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [r, dx, rs] = fcnrange(v1,v2)
 %accepts nx3 column vectors
 

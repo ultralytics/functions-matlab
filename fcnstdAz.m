@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function stdAz = fcnstdAz(vCC,stdCC)
 %This function takes in an nx3 matrix whos columns are the x y z components
 %of each row's cartesian vectors. It uses a rational equation fit to determine the

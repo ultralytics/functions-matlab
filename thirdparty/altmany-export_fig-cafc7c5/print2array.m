@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [A, bcol] = print2array(fig, res, renderer, gs_options)
 %PRINT2ARRAY  Exports a figure to an image array
 %

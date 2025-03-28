@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function c = redblue(m)
 %REDBLUE    Shades of red and blue color map
 %   REDBLUE(M), is an M-by-3 matrix that defines a colormap.

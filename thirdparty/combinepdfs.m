@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function combinepdfs()
 
 [fname, pname] = uigetfile([pwd '/*.*'],'Select pdf files:','MultiSelect','on'); 

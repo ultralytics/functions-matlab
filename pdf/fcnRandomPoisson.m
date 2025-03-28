@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function intOut = fcnRandomPoisson(L) 
 %This function generates on random number using a Poisson Distribution if
 %the mean/variance is 50 or less, and a normal distribution if the mean is

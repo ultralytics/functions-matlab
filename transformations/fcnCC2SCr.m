@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function sc = fcnCC2SCr(x,y,z)
 if nargin==1
     z = x(:,3);

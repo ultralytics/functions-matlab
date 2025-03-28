@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function ndx = sub2indq(siz,varargin)
 %SUB2IND Linear index from multiple subscripts.
 %   DISABLED ERROR CHECKING FOR FASTER SPEED! JOCHER!!

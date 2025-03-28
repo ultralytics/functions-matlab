@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function lon = longitude360to180(lon)
 %lon (deg)
 %wraps longitudes past -180 and 180. 

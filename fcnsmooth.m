@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function x = fcnsmooth(x,n)
 %smooths each column. Moving average window n samples wide. n must be odd!
 if nargin==1; n=5;  end

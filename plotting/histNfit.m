@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [f, gof] = histNfit(x,y,c,rotateplot)
 %plots a normal fit to the peak histogram data
 if nargin<3 || isempty(c);  c='b';  end

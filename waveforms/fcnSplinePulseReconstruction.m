@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function y = fcnSplinePulseReconstruction(y,ceiling) %RECONSTRUCT PULSES
 %y = [256 30], 256 samples x 30 channels
 

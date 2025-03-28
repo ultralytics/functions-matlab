@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function fh = isolate_axes(ah, vis)
 %ISOLATE_AXES Isolate the specified axes in a figure on their own
 %

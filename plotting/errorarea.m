@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function h=errorarea(varargin)
 %can also be called 'errorarea(x,mu,s) or errorarea(x,mu,s,c)
 %like errorbar but plots an area instead

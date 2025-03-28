@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function x = fcnSNR2angle1sigma(snr,nz)
 %converts angular SNR and measurement count n into angular 1 sigma
 

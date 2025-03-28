@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [mu, s, xvc] = fcnplotsigmabounds(confidence,nbins)
 %confidence = confidence bounds to plot, from 0 to 1. If no arguments passed, assumes confidence = 0.683
 %example x = rand(500,1)*10; y = (x+randn(500,1)).^2; fig; plot(x,y,'b.',x,max(y)-y,'g.'); fcnplotsigmabounds

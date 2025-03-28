@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function varargout = winkel(varargin)
 %REPLACE MATLAB NATIV FUNCTION winkel.m with this one!!!!
 

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function pathname = fcnfile2folder(filename)
 str = which(filename,'-ALL');
 

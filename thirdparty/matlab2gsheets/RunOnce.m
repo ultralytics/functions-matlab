@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function RunOnce(client_id, client_secret)
 % This function collects access tokens for Google API access using OAuth2
 % certification gathered from https://console.developers.google.com/ after

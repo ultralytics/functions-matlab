@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [ffty, f, w] = fcnfft(y,t,plotflag)
 if nargin==1
     t = 0:numel(y)-1;

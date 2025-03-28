@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [su, sl, mu] = fcnstd(x,mu)
 %standard deviation of each column with an option mu argument of each column!
 %su = sigma upper. if only one output argument then just sigma

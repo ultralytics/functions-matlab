@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function DCM_W2B = fcnRPY2DCM_W2B(RPY)
 sr=sin(RPY(1));
 sp=sin(RPY(2));

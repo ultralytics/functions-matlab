@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = fcnrotateaxes(h,x,n)
 %x = [az, el]; %deg
 %n = number of steps to do it in

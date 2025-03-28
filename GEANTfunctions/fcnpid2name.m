@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [name, color, mass, charge] = fcnpid2name(pid)
 %returns two strings for one particle, or two cells for multiple particles
 %particle colors! sprintf('%.3f %.3f %.3f\n',rand(254,3))

@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function popoutsubplot(hin, hout)
 %copies axes hin to axes hout
 %fcncontextmenuexpand(gca)

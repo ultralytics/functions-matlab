@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = popoutline(ha)
 if nargin==0 %add the context menu to existing items
     hcmenu = uicontextmenu;

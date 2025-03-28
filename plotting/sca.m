@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function h=sca(h)
 %sets current axis, like axes(h) but faster
 

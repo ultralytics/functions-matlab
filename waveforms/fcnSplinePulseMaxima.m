@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function maxima = fcnSplinePulseMaxima(y)
 %y = [256 30], 256 samples x 30 channels
 n = 3; %splines points on either side

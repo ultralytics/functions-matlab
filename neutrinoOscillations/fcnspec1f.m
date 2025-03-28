@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function f1 = fcnspec1f(r1, MeV, op)
 a=1;
 b=1;

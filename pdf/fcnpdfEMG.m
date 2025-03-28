@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function y = fcnpdfEMG(x,mu,sigma,lambda)
 %http://en.wikipedia.org/wiki/ExGaussian_distribution
 

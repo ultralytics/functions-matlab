@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [pname, fname, fnamepretty] = pfsplit(str)
 %path and filename split
 %['/Users/glennjocher/Desktop/APR25/', 'Neutron_Run_2.txt', 'Neutron Run 2'] = pfsplit('/Users/glennjocher/Desktop/APR25/Neutron_Run_2.txt')

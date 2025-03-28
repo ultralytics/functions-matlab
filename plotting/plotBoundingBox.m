@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function h=plotBoundingBox(x,varargin)
 %Plots bounding box on current axis
 %Bounding Box defined by: [x y width height]
