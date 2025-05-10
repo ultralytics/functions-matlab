@@ -1,3 +1,5 @@
+// Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 /* 2D linear interpolation 
    Andriy Myronenko, Feb 2008, email: myron@csee.ogi.edu
    homepage: http://www.bme.ogi.edu/~myron/

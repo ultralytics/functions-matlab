@@ -1,3 +1,5 @@
+// Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 //purpose:  1D linear iterploation
 //inputs:   interp1c(x,y,xi)
 //outputs:  A size(xi)
