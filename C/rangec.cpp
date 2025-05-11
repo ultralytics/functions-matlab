@@ -1,3 +1,4 @@
+// Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 //purpose:  Finds the bsx ranges between two sets of 2D or 3D vectors A and B
 //inputs:   A (nx3), optional B (1x3) or vice versa

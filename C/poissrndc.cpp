@@ -1,3 +1,5 @@
+// Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 //purpose:  Generates isotropic unit vectors
 //inputs:   rows, numbe of vectors to make
 //outputs:  A (nx3)

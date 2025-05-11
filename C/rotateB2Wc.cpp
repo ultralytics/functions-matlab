@@ -1,3 +1,5 @@
+// Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 //purpose:  Rotates nx3 matrix X by nx3 RPY matrix R
 //inputs:   X (nx3), R (mx3)
 //outputs:  Y
