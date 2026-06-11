@@ -204,7 +204,7 @@ Results in a clean image with no compression noise:
 
 -   **Anti-aliasing Control**: Adjust anti-aliasing levels using `-a<val>` (1=none, 2, 3=default, 4=max). Disabling it (`-a1`) can speed up export and reduce blurring for certain images but may result in jagged lines.
 -   **Cropping**: `export_fig` crops output by default. Use `-nocrop` to preserve the original border width as seen on screen.
--   **Colourspace**: Export in grayscale (`-grey` or `-gray`) or [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model) (`-cmyk`) instead of the default [RGB](https://en.wikipedia.org/wiki/RGB_color_model). CMYK is supported for PDF, EPS, and TIFF, often required by publishers.
+-   **Colourspace**: Export in greyscale (`-grey` or `-gray`) or [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model) (`-cmyk`) instead of the default [RGB](https://en.wikipedia.org/wiki/RGB_color_model). CMYK is supported for PDF, EPS, and TIFF, often required by publishers.
 -   **Target Directory**: Specify a full or relative path in the filename to save to a specific directory:
     ```Matlab
     export_fig ../subdir/fig.png;
@@ -253,7 +253,7 @@ Results in a clean image with no compression noise:
     ```
     If artifacts persist on screen, fix the figure first. If artifacts only appear in the export, try a different export renderer or check the Known Issues below.
 -   **Smoothed PDFs**: If images in exported PDFs look overly smoothed, it's likely your PDF viewer's setting. The image data itself is not smoothed. Check viewer settings or try a different viewer like [Adobe Acrobat Reader](https://get.adobe.com/reader/).
--   **Locating Dependencies**: `export_fig` relies on external applications: [Ghostscript](http://www.ghostscript.com) (for EPS/PDF processing) and `pdftops` (part of the [Xpdf package](http://www.xpdfreader.com), for PDF processing). If prompted, ensure these are installed and accessible via your system's PATH, or point `export_fig` to their location via the dialog.
+-   **Locating Dependencies**: `export_fig` relies on external applications: [Ghostscript](http://www.ghostscript.com) (for EPS/PDF processing) and `pdftops` (part of the [Xpdf package](http://www.xpdfreader.com), for PDF processing). If prompted, ensure these are installed and accessible via your system's PATH, or point `export_fig` to their location via the dialogue.
 -   **Undefined Function Errors**: Errors like `??? Undefined function or method 'print2array' ...` mean you're missing files from the `export_fig` package. Download the complete package from [GitHub](https://github.com/altmany/export_fig) and ensure all files are extracted to the same directory and added to your MATLAB path.
 
 ## ⚠️ Known Issues

@@ -7,7 +7,7 @@ function [A, vA, vB, bb_rel] = crop_borders(A, bcol, padding, crop_amounts)
 %
 %IN:
 %   A - HxWxCxN stack of images.
-%   bcol - Cx1 background color vector.
+%   bcol - Cx1 background colour vector.
 %   padding - scalar indicating how much padding to have in relation to
 %             the cropped-image-size (0<=padding<=1). Default: 0
 %   crop_amounts - 4-element vector of crop amounts: [top,right,bottom,left]

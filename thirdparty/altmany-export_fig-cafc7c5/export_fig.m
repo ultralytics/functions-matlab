@@ -192,7 +192,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
 % The idea of appending figures in pdfs came from Matt C in comments on the
 % FEX (id: 23629)
 
-% Thanks to Roland Martin for pointing out the color MATLAB
+% Thanks to Roland Martin for pointing out the colour MATLAB
 % bug/feature with colorbar axes and transparent backgrounds.
 % Thanks also to Andrew Matthews for describing a bug to do with the figure
 % size changing in -nodisplay mode. I couldn't reproduce it, but included a
@@ -431,7 +431,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                 displaySuggestedWorkarounds = false;
                 error('For bitmap output (png,jpg,tif,bmp) the padding value (-p) must be between -1<p<1')
             end
-            % Get the background color
+            % Get the background colour
             if options.transparent && (options.png || options.alpha)
                 % Get out an alpha channel
                 % MATLAB "feature": black colorbar axes can change to white and vice versa!
@@ -450,13 +450,13 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                     xCol = sum(xCol, 2);
                 end
                 % MATLAB "feature": apparently figure size can change when changing
-                % color in -nodisplay mode
+                % colour in -nodisplay mode
                 pos = get(fig, 'Position');
-                % Set the background color to black, and set size in case it was
+                % Set the background colour to black, and set size in case it was
                 % changed internally
                 tcol = get(fig, 'Color');
                 set(fig, 'Color', 'k', 'Position', pos);
-                % Correct the colorbar axes colors
+                % Correct the colorbar axes colours
                 set(hCB(yCol==0), 'YColor', [0 0 0]);
                 set(hCB(xCol==0), 'XColor', [0 0 0]);
 
@@ -473,7 +473,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
 
                 % Set background to white (and set size)
                 set(fig, 'Color', 'w', 'Position', pos);
-                % Correct the colorbar axes colors
+                % Correct the colorbar axes colours
                 set(hCB(yCol==3), 'YColor', [1 1 1]);
                 set(hCB(xCol==3), 'XColor', [1 1 1]);
 
@@ -488,7 +488,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                     A = single(print2array(fig, magnify/options.aa_factor, renderer));
                 end
 
-                % Set the background color (and size) back to normal
+                % Set the background colour (and size) back to normal
                 set(fig, 'Color', tcol, 'Position', pos);
                 % Compute the alpha map
                 alpha = round(sum(B - A, 3)) / (255 * 3) + 1;
@@ -496,7 +496,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                 A(A==0) = 1;
                 A = B ./ A(:,:,[1 1 1]);
                 clear B
-                % Convert to grayscale
+                % Convert to greyscale
                 if options.colourspace == 2
                     A = rgb2grey(A);
                 end
@@ -522,7 +522,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                     % Clear the png bit
                     options.png = false;
                 end
-                % Return only one channel for grayscale
+                % Return only one channel for greyscale
                 if isbitmap(options)
                     A = check_greyscale(A);
                 end
@@ -546,7 +546,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                 % Print large version to array
                 if options.transparent
                     % MATLAB "feature": apparently figure size can change when changing
-                    % color in -nodisplay mode
+                    % colour in -nodisplay mode
                     pos = get(fig, 'Position');
                     tcol = get(fig, 'Color');
                     set(fig, 'Color', 'w', 'Position', pos);
@@ -563,10 +563,10 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                 % Downscale the image
                 A = downsize(A, options.aa_factor);
                 if options.colourspace == 2
-                    % Convert to grayscale
+                    % Convert to greyscale
                     A = rgb2grey(A);
                 else
-                    % Return only one channel for grayscale
+                    % Return only one channel for greyscale
                     A = check_greyscale(A);
                 end
                 % Outputs
@@ -1077,7 +1077,7 @@ function [fig, options] = parse_args(nout, fig, varargin)
                                 end
                                 if ~isscalar(val) || isnan(val)
                                     wasError = true;
-                                    error('option %s is not recognized or cannot be parsed', varargin{a});
+                                    error('option %s is not recognised or cannot be parsed', varargin{a});
                                 end
                                 switch lower(varargin{a}(2))
                                     case 'm'
@@ -1269,7 +1269,7 @@ function A = rgb2grey(A)
 end
 
 function A = check_greyscale(A)
-    % Check if the image is grayscale
+    % Check if the image is greyscale
     if size(A, 3) == 3 && ...
             all(reshape(A(:,:,1) == A(:,:,2), [], 1)) && ...
             all(reshape(A(:,:,2) == A(:,:,3), [], 1))
