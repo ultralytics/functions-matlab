@@ -71,7 +71,7 @@ function [A, bcol] = print2array(fig, res, renderer, gs_options)
         % 30M pixels or larger!
         warning('MATLAB:LargeImage', 'print2array generating a %.1fM pixel image. This could be slow and might also cause memory problems.', npx);
     end
-    % Retrieve the background colour
+    % Retrieve the background color
     bcol = get(fig, 'Color');
     % Set the resolution parameter
     res_str = ['-r' num2str(ceil(get(0, 'ScreenPixelsPerInch')*res))];
@@ -141,7 +141,7 @@ function [A, bcol] = print2array(fig, res, renderer, gs_options)
             % Delete the temporary bitmap file
             delete(tmp_nam);
         end
-        % Set border pixels to the correct colour
+        % Set border pixels to the correct color
         if isequal(bcol, 'none')
             bcol = [];
         elseif isequal(bcol, [1 1 1])

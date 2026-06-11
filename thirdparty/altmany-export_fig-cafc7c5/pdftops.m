@@ -74,7 +74,7 @@ function path_ = xpdf_path
     fprintf(2, '%s\n', [errMsg1 '<a href="matlab:web(''-browser'',''' url1 ''');">' url1 '</a>']);
     errMsg1 = [errMsg1 url1];
     %if strncmp(computer,'MAC',3) % Is a Mac
-    %    % Give separate warning as the MacOS uigetdir dialogue box doesn't have a title
+    %    % Give separate warning as the MacOS uigetdir dialog box doesn't have a title
     %    uiwait(warndlg(errMsg1))
     %end
 
