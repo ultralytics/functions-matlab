@@ -128,7 +128,7 @@ function path_ = gs_path
     % Ask the user to enter the path
     while true
         if strncmp(computer, 'MAC', 3) % Is a Mac
-            % Give separate warning as the uigetdir dialog box doesn't have a
+            % Give separate warning as the uigetdir dialogue box doesn't have a
             % title
             uiwait(warndlg('Ghostscript not found. Please locate the program.'))
         end
