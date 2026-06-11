@@ -99,7 +99,7 @@ All resolution options (`-m<val>`, `-q<val>`, `-native`) correctly embed resolut
 
 ### Shrinking Dots & Dashes
 
-When exporting figures with dashed or dotted lines using the ZBuffer or [OpenGL](https://www.opengl.org/) renderers (default for bitmaps), the dots and dashes can appear shortened or disappear, especially with thick lines or high resolution.
+When exporting figures with dashed or dotted lines using the ZBuffer or [OpenGL](https://www.khronos.org/opengl/) renderers (default for bitmaps), the dots and dashes can appear shortened or disappear, especially with thick lines or high resolution.
 
 Example:
 

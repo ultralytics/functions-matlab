@@ -44,9 +44,9 @@ Getting started with these functions is straightforward:
 Once the repository is added to your MATLAB path, you can call any function directly from your MATLAB scripts or the command window, just like any built-in MATLAB function.
 
 ```matlab
-% Example: Calling a hypothetical function 'ultralytics_preprocess' from the repository
-processedData = ultralytics_preprocess(rawData);
-disp('Data processed successfully using Ultralytics function.');
+% Example: Compute the Euclidean distance between two 3D points.
+distance = fcnrange([0 0 0], [3 4 0]);
+disp(distance);
 ```
 
 Refer to the specific function's documentation (usually included as comments within the `.m` file) for details on its usage, inputs, and outputs. Learn more about [calling functions in MATLAB](https://www.mathworks.com/help/matlab/learn-matlab/calling-functions.html).
@@ -57,13 +57,13 @@ Contributions from the community are highly encouraged and appreciated! Whether 
 
 We also value your feedback on Ultralytics products and initiatives. Please consider sharing your thoughts by filling out our [Survey](https://www.ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A huge 🙏 thank you to all our contributors!
 
-[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
+[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/functions-matlab/graphs/contributors)
 
 ## ©️ License
 
 Ultralytics provides two licensing options to accommodate different use cases:
 
--   **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/) [open-source](https://opensource.org/osd) license ideal for students, researchers, and enthusiasts who wish to share improvements and collaborate openly. See the [LICENSE](https://github.com/ultralytics/functions-matlab/blob/main/LICENSE) file for the full terms.
+-   **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) [open-source](https://opensource.org/osd) license ideal for students, researchers, and enthusiasts who wish to share improvements and collaborate openly. See the [LICENSE](https://github.com/ultralytics/functions-matlab/blob/main/LICENSE) file for the full terms.
 -   **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source requirements of AGPL-3.0. If your project requires an Enterprise License, please contact us through [Ultralytics Licensing](https://www.ultralytics.com/license).
 
 ## 📬 Get in Touch
