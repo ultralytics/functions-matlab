@@ -36,9 +36,9 @@ export_fig test2.png
 
 This code generates the following outputs:
 
-|                                 Figure:                                 |                                test.png (saveas):                                |                               test2.png (export_fig):                                |
-| :---------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
-| ![](https://farm6.staticflickr.com/5616/15589249291_16e485c29a_o_d.png) | ![](https://farm4.staticflickr.com/3944/15406302850_4d2e1c7afa_o_d.png)         | ![](https://farm6.staticflickr.com/5607/15568225476_8ce9bd5f6b_o_d.png)   |
+|                                 Figure:                                 |                           test.png (saveas):                            |                         test2.png (export_fig):                         |
+| :---------------------------------------------------------------------: | :---------------------------------------------------------------------: | :---------------------------------------------------------------------: |
+| ![](https://farm6.staticflickr.com/5616/15589249291_16e485c29a_o_d.png) | ![](https://farm4.staticflickr.com/3944/15406302850_4d2e1c7afa_o_d.png) | ![](https://farm6.staticflickr.com/5607/15568225476_8ce9bd5f6b_o_d.png) |
 
 Notice that `test2.png` (from `export_fig`) retains the original size and background color, unlike `test.png`. If you prefer a white background (or any other color), set it before exporting:
 
@@ -52,8 +52,8 @@ set(gcf, 'Color', 'w'); % Set figure background to white
 
 By default, `export_fig` exports bitmaps at screen resolution. However, you can specify different resolutions:
 
--   `-m<val>`: Magnifies the figure by `<val>` (e.g., `-m2` doubles the pixel dimensions).
--   `-r<val>`: Sets the output bitmap resolution to `<val>` pixels per inch (PPI), based on the figure's on-screen dimensions in inches.
+- `-m<val>`: Magnifies the figure by `<val>` (e.g., `-m2` doubles the pixel dimensions).
+- `-r<val>`: Sets the output bitmap resolution to `<val>` pixels per inch (PPI), based on the figure's on-screen dimensions in inches.
 
 Using `-m2.5` on the previous example:
 
@@ -202,89 +202,91 @@ Results in a clean image with no compression noise:
 
 ## 💡 Tips
 
--   **Anti-aliasing Control**: Adjust anti-aliasing levels using `-a<val>` (1=none, 2, 3=default, 4=max). Disabling it (`-a1`) can speed up export and reduce blurring for certain images but may result in jagged lines.
--   **Cropping**: `export_fig` crops output by default. Use `-nocrop` to preserve the original border width as seen on screen.
--   **Colourspace**: Export in greyscale (`-grey` or `-gray`) or [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model) (`-cmyk`) instead of the default [RGB](https://en.wikipedia.org/wiki/RGB_color_model). CMYK is supported for PDF, EPS, and TIFF, often required by publishers.
--   **Target Directory**: Specify a full or relative path in the filename to save to a specific directory:
-    ```Matlab
-    export_fig ../subdir/fig.png;
-    export_fig('C:/Users/Me/Documents/figures/myfig', '-pdf', '-png');
-    ```
--   **Variable File Names**: Use the functional form and [`sprintf`](https://www.mathworks.com/help/matlab/ref/sprintf.html) for dynamic filenames in loops:
-    ```Matlab
-    for a = 1:5
-        plot(rand(5, 2)); % rand generates uniform distribution
-        export_fig(sprintf('plot%d.png', a));
-    end
-    ```
-    Remember quotes for string arguments in functional form:
-    ```Matlab
-    export_fig(sprintf('plot%d', a), '-a1', '-pdf', '-png');
-    ```
--   **Specify Figure/Axes**: Export a specific figure or axes using its handle:
-    ```Matlab
-    fig_handle = figure; % Create a new figure and get its handle
-    plot(1:10);
-    export_fig(fig_handle, 'my_figure.png');
+- **Anti-aliasing Control**: Adjust anti-aliasing levels using `-a<val>` (1=none, 2, 3=default, 4=max). Disabling it (`-a1`) can speed up export and reduce blurring for certain images but may result in jagged lines.
+- **Cropping**: `export_fig` crops output by default. Use `-nocrop` to preserve the original border width as seen on screen.
+- **Colourspace**: Export in grayscale (`-grey` or `-gray`) or [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model) (`-cmyk`) instead of the default [RGB](https://en.wikipedia.org/wiki/RGB_color_model). CMYK is supported for PDF, EPS, and TIFF, often required by publishers.
+- **Target Directory**: Specify a full or relative path in the filename to save to a specific directory:
+  ```Matlab
+  export_fig ../subdir/fig.png;
+  export_fig('C:/Users/Me/Documents/figures/myfig', '-pdf', '-png');
+  ```
+- **Variable File Names**: Use the functional form and [`sprintf`](https://www.mathworks.com/help/matlab/ref/sprintf.html) for dynamic filenames in loops:
+  ```Matlab
+  for a = 1:5
+      plot(rand(5, 2)); % rand generates uniform distribution
+      export_fig(sprintf('plot%d.png', a));
+  end
+  ```
+  Remember quotes for string arguments in functional form:
+  ```Matlab
+  export_fig(sprintf('plot%d', a), '-a1', '-pdf', '-png');
+  ```
+- **Specify Figure/Axes**: Export a specific figure or axes using its handle:
 
-    ax_handle = gca; % Get handle to current axes
-    export_fig(ax_handle, 'my_axes.pdf');
-    ```
--   **Multiple Formats**: Export to several formats at once:
-    ```Matlab
-    export_fig filename -pdf -eps -png -jpg -tiff
-    ```
--   **Other File Formats**: Output image data (and optionally alpha mask) to the workspace for use with other functions like [`imwrite`](https://www.mathworks.com/help/matlab/ref/imwrite.html):
-    ```Matlab
-    frame = export_fig; % Get image data
-    [frame, alpha] = export_fig; % Get image data and alpha mask
-    % Now use 'frame' and 'alpha' with imwrite or other functions
-    ```
--   **Appending Files**: Use `-append` to add the figure to an existing PDF or TIFF file. For many appends to a PDF, saving separately and then merging (e.g., using `append_pdfs`) can be faster.
--   **Clipboard Output**: Copy the figure/axes to the system clipboard as a bitmap using `-clipboard` for easy pasting into applications like [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word) or [PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).
--   **Font Size Consistency**: To ensure fonts appear at a specific size in your final document, set the font size correctly in the MATLAB figure *before* exporting. Ensure the figure's on-screen size matches the desired size in the document to avoid resizing the exported image.
--   **Renderers**: MATLAB offers painters, OpenGL, and ZBuffer renderers, each with different capabilities. Vector formats (PDF, EPS) default to painters; bitmaps default to OpenGL. Force a specific renderer using `-painters`, `-opengl`, or `-zbuffer`.
-    ```Matlab
-    export_fig test.png -painters
-    ```
--   **Troubleshooting Artifacts**: If the output differs from the on-screen figure, ensure the on-screen renderer matches the export renderer. Set the on-screen renderer using:
-    ```Matlab
-    set(figure_handle, 'Renderer', 'opengl'); % Or 'painters', 'zbuffer'
-    ```
-    If artifacts persist on screen, fix the figure first. If artifacts only appear in the export, try a different export renderer or check the Known Issues below.
--   **Smoothed PDFs**: If images in exported PDFs look overly smoothed, it's likely your PDF viewer's setting. The image data itself is not smoothed. Check viewer settings or try a different viewer like [Adobe Acrobat Reader](https://get.adobe.com/reader/).
--   **Locating Dependencies**: `export_fig` relies on external applications: [Ghostscript](http://www.ghostscript.com) (for EPS/PDF processing) and `pdftops` (part of the [Xpdf package](http://www.xpdfreader.com), for PDF processing). If prompted, ensure these are installed and accessible via your system's PATH, or point `export_fig` to their location via the dialogue.
--   **Undefined Function Errors**: Errors like `??? Undefined function or method 'print2array' ...` mean you're missing files from the `export_fig` package. Download the complete package from [GitHub](https://github.com/altmany/export_fig) and ensure all files are extracted to the same directory and added to your MATLAB path.
+  ```Matlab
+  fig_handle = figure; % Create a new figure and get its handle
+  plot(1:10);
+  export_fig(fig_handle, 'my_figure.png');
+
+  ax_handle = gca; % Get handle to current axes
+  export_fig(ax_handle, 'my_axes.pdf');
+  ```
+
+- **Multiple Formats**: Export to several formats at once:
+  ```Matlab
+  export_fig filename -pdf -eps -png -jpg -tiff
+  ```
+- **Other File Formats**: Output image data (and optionally alpha mask) to the workspace for use with other functions like [`imwrite`](https://www.mathworks.com/help/matlab/ref/imwrite.html):
+  ```Matlab
+  frame = export_fig; % Get image data
+  [frame, alpha] = export_fig; % Get image data and alpha mask
+  % Now use 'frame' and 'alpha' with imwrite or other functions
+  ```
+- **Appending Files**: Use `-append` to add the figure to an existing PDF or TIFF file. For many appends to a PDF, saving separately and then merging (e.g., using `append_pdfs`) can be faster.
+- **Clipboard Output**: Copy the figure/axes to the system clipboard as a bitmap using `-clipboard` for easy pasting into applications like [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word) or [PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).
+- **Font Size Consistency**: To ensure fonts appear at a specific size in your final document, set the font size correctly in the MATLAB figure _before_ exporting. Ensure the figure's on-screen size matches the desired size in the document to avoid resizing the exported image.
+- **Renderers**: MATLAB offers painters, OpenGL, and ZBuffer renderers, each with different capabilities. Vector formats (PDF, EPS) default to painters; bitmaps default to OpenGL. Force a specific renderer using `-painters`, `-opengl`, or `-zbuffer`.
+  ```Matlab
+  export_fig test.png -painters
+  ```
+- **Troubleshooting Artifacts**: If the output differs from the on-screen figure, ensure the on-screen renderer matches the export renderer. Set the on-screen renderer using:
+  ```Matlab
+  set(figure_handle, 'Renderer', 'opengl'); % Or 'painters', 'zbuffer'
+  ```
+  If artifacts persist on screen, fix the figure first. If artifacts only appear in the export, try a different export renderer or check the Known Issues below.
+- **Smoothed PDFs**: If images in exported PDFs look overly smoothed, it's likely your PDF viewer's setting. The image data itself is not smoothed. Check viewer settings or try a different viewer like [Adobe Acrobat Reader](https://get.adobe.com/reader/).
+- **Locating Dependencies**: `export_fig` relies on external applications: [Ghostscript](http://www.ghostscript.com) (for EPS/PDF processing) and `pdftops` (part of the [Xpdf package](http://www.xpdfreader.com), for PDF processing). If prompted, ensure these are installed and accessible via your system's PATH, or point `export_fig` to their location via the dialog.
+- **Undefined Function Errors**: Errors like `??? Undefined function or method 'print2array' ...` mean you're missing files from the `export_fig` package. Download the complete package from [GitHub](https://github.com/altmany/export_fig) and ensure all files are extracted to the same directory and added to your MATLAB path.
 
 ## ⚠️ Known Issues
 
 `export_fig` wraps MATLAB's `print` function and inherits some of its limitations:
 
--   **Fonts (Painters Renderer)**: The painters renderer supports limited fonts (see [MathWorks documentation](https://www.mathworks.com/help/matlab/creating_plots/choose-a-printer-driver.html#f3-96545)). `export_fig` attempts font name correction in EPS files, but it's not guaranteed, especially for LaTeX-interpreted text. Ghostscript errors like `/undefined in /findfont` might occur if font definition files are missing; ensure `EXPORT_FIG_PATH/.ignore/gs_font_path.txt` points to your TrueType font directories.
--   **RGB Color (Painters Renderer)**: A warning "RGB color data not yet supported in Painter's mode" occurs when exporting patches with direct RGB color specifications (e.g., from [`pcolor`](https://www.mathworks.com/help/matlab/ref/pcolor.html)) using the painters renderer. Use colormap-indexed colors or consider alternatives like `uimagesc` from the File Exchange.
--   **Dashed Contour Lines (Painters Renderer)**: Dashed lines created with [`contour`](https://www.mathworks.com/help/matlab/ref/contour.html) may appear solid due to a MATLAB limitation ([details](https://www.mathworks.com/matlabcentral/answers/94703)).
--   **Text Size (OpenGL/ZBuffer)**: Large text might resize unexpectedly when exporting at non-screen resolutions with OpenGL or ZBuffer. Try the `-painters` option.
--   **Lighting & Transparency (Painters Renderer)**: These effects are not supported by the painters renderer. For vector output with transparency, consider [plot2svg](https://www.mathworks.com/matlabcentral/fileexchange/7401-scalable-vector-graphics-svg-export-of-figures) and conversion tools like [Inkscape](https://inkscape.org/).
--   **Lines in Patch Objects (Painters Renderer)**: Thin lines (background color) might appear across patches in PDF output due to MATLAB rendering bugs. These can sometimes be removed using vector editing software like [Inkscape](https://inkscape.org/) or by disabling anti-aliasing in the PDF viewer ([discussion](https://github.com/altmany/export_fig/issues/44)).
--   **Out of Memory**: If memory issues occur, try:
-    1.  Reducing anti-aliasing (`-a<val>`).
-    2.  Reducing figure size (`set(gcf, 'Position', ...)`).
-    3.  Reducing export resolution (`-m<val>` or `-r<val>`).
-    4.  Changing the renderer (`-painters` or `-zbuffer`).
--   **OpenGL Errors**: These often stem from MATLAB bugs or graphics driver issues. Ensure your driver is up-to-date. If problems persist, try the `-zbuffer` renderer.
+- **Fonts (Painters Renderer)**: The painters renderer supports limited fonts (see [MathWorks documentation](https://www.mathworks.com/help/matlab/creating_plots/choose-a-printer-driver.html#f3-96545)). `export_fig` attempts font name correction in EPS files, but it's not guaranteed, especially for LaTeX-interpreted text. Ghostscript errors like `/undefined in /findfont` might occur if font definition files are missing; ensure `EXPORT_FIG_PATH/.ignore/gs_font_path.txt` points to your TrueType font directories.
+- **RGB Color (Painters Renderer)**: A warning "RGB color data not yet supported in Painter's mode" occurs when exporting patches with direct RGB color specifications (e.g., from [`pcolor`](https://www.mathworks.com/help/matlab/ref/pcolor.html)) using the painters renderer. Use colormap-indexed colors or consider alternatives like `uimagesc` from the File Exchange.
+- **Dashed Contour Lines (Painters Renderer)**: Dashed lines created with [`contour`](https://www.mathworks.com/help/matlab/ref/contour.html) may appear solid due to a MATLAB limitation ([details](https://www.mathworks.com/matlabcentral/answers/94703)).
+- **Text Size (OpenGL/ZBuffer)**: Large text might resize unexpectedly when exporting at non-screen resolutions with OpenGL or ZBuffer. Try the `-painters` option.
+- **Lighting & Transparency (Painters Renderer)**: These effects are not supported by the painters renderer. For vector output with transparency, consider [plot2svg](https://www.mathworks.com/matlabcentral/fileexchange/7401-scalable-vector-graphics-svg-export-of-figures) and conversion tools like [Inkscape](https://inkscape.org/).
+- **Lines in Patch Objects (Painters Renderer)**: Thin lines (background color) might appear across patches in PDF output due to MATLAB rendering bugs. These can sometimes be removed using vector editing software like [Inkscape](https://inkscape.org/) or by disabling anti-aliasing in the PDF viewer ([discussion](https://github.com/altmany/export_fig/issues/44)).
+- **Out of Memory**: If memory issues occur, try:
+  1.  Reducing anti-aliasing (`-a<val>`).
+  2.  Reducing figure size (`set(gcf, 'Position', ...)`).
+  3.  Reducing export resolution (`-m<val>` or `-r<val>`).
+  4.  Changing the renderer (`-painters` or `-zbuffer`).
+- **OpenGL Errors**: These often stem from MATLAB bugs or graphics driver issues. Ensure your driver is up-to-date. If problems persist, try the `-zbuffer` renderer.
 
 ## 🐞 Raising Issues
 
 If you encounter an issue **not listed above**:
 
-1.  **Verify On-Screen Rendering**: Check if the figure looks correct on screen using the *same renderer* `export_fig` will use (Painters for vector, OpenGL for bitmap by default). If it's wrong on screen, the issue lies there.
+1.  **Verify On-Screen Rendering**: Check if the figure looks correct on screen using the _same renderer_ `export_fig` will use (Painters for vector, OpenGL for bitmap by default). If it's wrong on screen, the issue lies there.
 2.  **Try Other Renderers**: If exporting to bitmap, test `-opengl`, `-zbuffer`, and `-painters` to see if one works correctly.
 3.  **Use Latest Version**: Ensure you have the newest `export_fig` from [GitHub](https://github.com/altmany/export_fig).
 4.  **Submit Issue**: If the problem persists only in the exported file, please raise an [issue on GitHub](https://github.com/altmany/export_fig/issues). Include:
-    -   The `.fig` file.
-    -   The exact `export_fig` command used.
-    -   The incorrect output file.
-    -   A description of the expected output.
+    - The `.fig` file.
+    - The exact `export_fig` command used.
+    - The incorrect output file.
+    - A description of the expected output.
 
 While fixes aren't guaranteed (especially for underlying MATLAB bugs), clear reports help improve the toolbox. Feature requests are also welcome!
 
@@ -294,9 +296,9 @@ While fixes aren't guaranteed (especially for underlying MATLAB bugs), clear rep
 
 The `export_fig` logo demonstrates several features:
 
--   **Original Figure (Top Right)**: A translucent mesh.
--   **PDF Output (Bottom Center)**: Exported as a [vector graphic](https://en.wikipedia.org/wiki/Vector_graphics), allowing lossless zooming. However, translucency is lost, and thin white lines (gaps between patches) might appear depending on the PDF viewer.
--   **PNG Output (Top Left)**: Exported as a bitmap. Translucency is preserved (note the background showing through), and the image is anti-aliased. However, zooming reveals pixelation, and lines are less sharp than the PDF.
+- **Original Figure (Top Right)**: A translucent mesh.
+- **PDF Output (Bottom Center)**: Exported as a [vector graphic](https://en.wikipedia.org/wiki/Vector_graphics), allowing lossless zooming. However, translucency is lost, and thin white lines (gaps between patches) might appear depending on the PDF viewer.
+- **PNG Output (Top Left)**: Exported as a bitmap. Translucency is preserved (note the background showing through), and the image is anti-aliased. However, zooming reveals pixelation, and lines are less sharp than the PDF.
 
 ## 🤝 Contributing
 

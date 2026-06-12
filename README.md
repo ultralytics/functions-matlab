@@ -19,7 +19,7 @@ The [functions-matlab](https://github.com/ultralytics/functions-matlab) reposito
 
 To effectively use the resources provided in this repository, please ensure you have the following installed:
 
--   [MATLAB](https://www.mathworks.com/products/matlab.html) version R2018a or newer.
+- [MATLAB](https://www.mathworks.com/products/matlab.html) version R2018a or newer.
 
 ## 📥 Installation
 
@@ -37,6 +37,7 @@ Getting started with these functions is straightforward:
     addpath(genpath('path_to_cloned_repo/functions-matlab'))
     % Example: addpath(genpath('/Users/username/Documents/MATLAB/functions-matlab'))
     ```
+
     For more details on managing the MATLAB path, see the official [MathWorks documentation](https://www.mathworks.com/help/matlab/ref/addpath.html).
 
 ## 🧰 How to Use
@@ -63,8 +64,8 @@ We also value your feedback on Ultralytics products and initiatives. Please cons
 
 Ultralytics provides two licensing options to accommodate different use cases:
 
--   **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) [open-source](https://opensource.org/osd) license ideal for students, researchers, and enthusiasts who wish to share improvements and collaborate openly. See the [LICENSE](https://github.com/ultralytics/functions-matlab/blob/main/LICENSE) file for the full terms.
--   **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source requirements of AGPL-3.0. If your project requires an Enterprise License, please contact us through [Ultralytics Licensing](https://www.ultralytics.com/license).
+- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) [open-source](https://opensource.org/osd) license ideal for students, researchers, and enthusiasts who wish to share improvements and collaborate openly. See the [LICENSE](https://github.com/ultralytics/functions-matlab/blob/main/LICENSE) file for the full terms.
+- **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source requirements of AGPL-3.0. If your project requires an Enterprise License, please contact us through [Ultralytics Licensing](https://www.ultralytics.com/license).
 
 ## 📬 Get in Touch
 
