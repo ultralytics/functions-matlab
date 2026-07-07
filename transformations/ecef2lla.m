@@ -29,16 +29,17 @@ z = xyz(:,3)*1000;
 
 % WGS84 ellipsoid constants:
 a = 6378137;
-es = (8.1819190842622e-2)^2;
+e = 8.1819190842622e-2;
+es = e^2;
 
 % calculations:
 b   = sqrt(a^2*(1-es));
-ep  = (a^2-b^2)/b^2;
+ep  = sqrt((a^2-b^2)/b^2);
 
 p   = sqrt(x.^2+y.^2);
 th  = atan2(a*z,b*p);
 lon = atan2(y,x);
-lat = atan2((z+ep^2.*b.*sin(th).^3),(p-es^2.*a.*cos(th).^3));
+lat = atan2((z+ep^2.*b.*sin(th).^3),(p-es.*a.*cos(th).^3));
 N   = a./sqrt(1-es.*sin(lat).^2);
 alt = p./cos(lat)-N;
 
