@@ -64,7 +64,7 @@ We also value your feedback on Ultralytics products and initiatives. Please cons
 
 Ultralytics provides two licensing options to accommodate different use cases:
 
-- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) [open-source](https://opensource.org/osd) license ideal for students, researchers, and enthusiasts who wish to share improvements and collaborate openly. See the [LICENSE](https://github.com/ultralytics/functions-matlab/blob/main/LICENSE) file for the full terms.
+- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-3.0) [open-source](https://opensource.org/osd) license ideal for students, researchers, and enthusiasts who wish to share improvements and collaborate openly. See the [LICENSE](https://github.com/ultralytics/functions-matlab/blob/main/LICENSE) file for the full terms.
 - **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source requirements of AGPL-3.0. If your project requires an Enterprise License, please contact us through [Ultralytics Licensing](https://www.ultralytics.com/license).
 
 ## 📬 Get in Touch
