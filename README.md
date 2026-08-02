@@ -1,6 +1,6 @@
 <a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
 
-# 🚀 Introduction
+# 🚀 Ultralytics MATLAB Functions
 
 Welcome to the Ultralytics MATLAB Functions Repository! This repository serves as a central hub for commonly used functions essential across various Ultralytics projects developed in [MATLAB](https://www.mathworks.com/products/matlab.html). These scripts provide a foundational toolkit designed to assist in the development and research phases of [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) and [data analysis](https://www.ultralytics.com/glossary/data-analytics) tasks. Explore and utilize these utilities to streamline your workflow and accelerate your projects!
 
