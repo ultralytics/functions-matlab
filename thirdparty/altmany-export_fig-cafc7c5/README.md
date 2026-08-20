@@ -1,4 +1,4 @@
-<a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+<a href="https://www.ultralytics.com"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
 
 # export_fig
 
@@ -255,7 +255,7 @@ Results in a clean image with no compression noise:
   ```
   If artifacts persist on screen, fix the figure first. If artifacts only appear in the export, try a different export renderer or check the Known Issues below.
 - **Smoothed PDFs**: If images in exported PDFs look overly smoothed, it's likely your PDF viewer's setting. The image data itself is not smoothed. Check viewer settings or try a different viewer like [Adobe Acrobat Reader](https://get.adobe.com/reader/).
-- **Locating Dependencies**: `export_fig` relies on external applications: [Ghostscript](http://www.ghostscript.com) (for EPS/PDF processing) and `pdftops` (part of the [Xpdf package](http://www.xpdfreader.com), for PDF processing). If prompted, ensure these are installed and accessible via your system's PATH, or point `export_fig` to their location via the dialog.
+- **Locating Dependencies**: `export_fig` relies on external applications: [Ghostscript](https://www.ghostscript.com) (for EPS/PDF processing) and `pdftops` (part of the [Xpdf package](http://www.xpdfreader.com), for PDF processing). If prompted, ensure these are installed and accessible via your system's PATH, or point `export_fig` to their location via the dialog.
 - **Undefined Function Errors**: Errors like `??? Undefined function or method 'print2array' ...` mean you're missing files from the `export_fig` package. Download the complete package from [GitHub](https://github.com/altmany/export_fig) and ensure all files are extracted to the same directory and added to your MATLAB path.
 
 ## ⚠️ Known Issues
