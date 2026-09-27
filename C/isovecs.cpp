@@ -11,7 +11,7 @@
 void cfunction(int rows, double* A)
 {
     int i;
-    float u,theta,b;
+    double u,theta,b;
     
     for (i=0; i<rows; i++)
     {
